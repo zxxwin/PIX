@@ -1,0 +1,257 @@
+a {
+  text-decoration: none;
+}
+.nex-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: "微软雅黑";
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.nex-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.nex-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.nex-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+.nex-create-character a {
+  text-decoration: none;
+  color: #767777;
+  font-weight: 300;
+}
+
+.nex-card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.nex-card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.nex-card-container .mdl-card__title {
+  padding: 6px 6px 0px 6px;
+  background: transparent;
+  height: auto;
+}
+
+.nex-card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+  width: 100%;
+}
+.nex-card-container .mdl-card__title-text a {
+  text-decoration: none;
+  color: #2C3E50;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  -webkit-transition: color .4s; /* Safari 和 Chrome */
+}
+.nex-card-container .mdl-card__title-text a:hover{
+  height: auto;
+  color: rgb(0,150,136);
+}
+.nex-card-container .mdl-card__supporting-text {
+  height: auto;
+  font-size: 1rem!important;
+  color: rgba(0,0,0,.54);
+  margin-bottom: 20px;
+}
+
+.nex-card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.nex-card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.nex-card-container .mdl-card__actions i {
+  font-size: 14px;
+  color: #999;
+}
+.nex-margin-bottom {
+  margin-bottom: 52px;
+}
+.nex-no {
+  position: absolute;
+  right: 16px;
+  color: #ccc;
+  font-size: 0.8em;
+}
+#menu-dropdown {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 3%;
+  z-index: 4;
+}
+.nex-nextpage {
+  float: right;
+}
+.nex-page {
+  text-decoration: none;
+  color:rgb(33, 33, 33);
+}
+.nex-img {
+  transition: transform 1s;
+  -moz-transition: transform 1s; /* Firefox 4 */
+  -webkit-transition: transform 1s; /* Safari 和 Chrome */
+  -o-transition: transform 1s; /* Opera */
+  transform:scale(1,1);
+  -moz-transform: scale(1,1); /* Firefox 4 */
+  -webkit-transform: scale(1,1); /* Safari 和 Chrome */
+  -o-transform:scale(1,1); /* Opera */
+}
+.nex-img:hover {
+  transform:scale(1.1,1.1);
+  -moz-transform: scale(1.1,1.1); /* Firefox 4 */
+  -webkit-transform: scale(1.1,1.1); /* Safari 和 Chrome */
+  -o-transform:scale(1.1,1.1); /* Opera */
+}
+.nex-visited {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+}
+.nex-visited-p {
+  margin: 0;
+}
+.font-size{
+  font-size: 22px;
+  font-family: "微软雅黑";
+  line-height: 2;
+  font-weight: 500;
+}
+.position-relative{
+  position: relative;
+}
+.nex-card-text{
+  height: 137px!important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.nex-card-title{
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nex-margin-left{
+  margin-left: 15px;
+  line-height: 1.5;
+}
+.nex-card-span{
+  font-size: 1rem;
+  line-height: 18px;
+}
+.nex-card-card-sub {
+  padding:0 16px;
+}
+.user-img {
+  width: 48px;
+  height:48px;
+  border-radius: 50%;
+}
+.page-maker {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+.nex-navigation .mdl-navigation__link:hover>.is-upgraded {
+  /*display: block;
+  background: #000;*/
+  visibility:visible!important;
+}
+.nex-sitemap a {
+  color: rgb(158, 158, 158);
+}
+
+.nex-card-username{
+  margin-left: 10px;
+}
+.nex-card-comment {
+  display: none;
+  margin-bottom: 40px;
+}
+.nex-card-comment li:first-child {
+  border-top:1px solid #ccc;
+}
+.nex-card-comment .mdl-list__item-text-body {
+  font-size: 12px;
+  margin-left: 20%;
+}
+.mdl-list__item--three-line {
+  height: 100px!important;
+}
+.nex-card-comment-time {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+.nex-maker-info {
+  padding: 10px 6px!important;
+}
+.font-size-12 {
+  font-size: 12px;
+  color: #999;
+  margin-left: 15px;
+}
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .nex-be-together-section {
+    height: 350px;
+  }
+
+  .nex-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .nex-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .nex-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+  .nex-fab {
+    display: none;
+  }
+  .nex-card-phone {
+    margin-bottom: 20px;
+  }
+}

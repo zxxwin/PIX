@@ -1,0 +1,814 @@
+  <!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Nexus中文网-为信仰而充值">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Pixel中文网-为信仰而充值</title>
+      <meta name="viewport" content="width=320.1,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+      <meta name="apple-mobile-web-app-title" content="Pixel中文网-为信仰而充值" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta content="telephone=no" name="format-detection" />
+      <meta name="full-screen" content="yes" />
+      <meta name="x5-fullscreen" content="true" />
+
+      <!-- Page styles -->
+      <link rel="stylesheet" href="../css/icon.css">
+      <link rel="stylesheet" href="../css/material.min.css">
+      <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../css/homepage.css">
+      <link rel="stylesheet" href="../css/login-register.css">
+    </head>
+    <body>
+      <div class="mdl-layout mdl-js-layout ">
+        <div class="nex-header mdl-layout__header mdl-layout__header--waterfall">
+          <div class="mdl-layout__header-row  mdl-layout--large-screen-only">
+            <span class="nex-title mdl-layout-title">Pixel中文网</span>
+            <!-- Add spacer, to align navigation to the right in desktop -->
+            <div class="nex-header-spacer mdl-layout-spacer"></div>
+            <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+              <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
+                <i class="material-icons">search</i>
+              </label>
+
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" id="search-field">
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="nex-navigation-container">
+              <nav class="nex-navigation mdl-navigation">
+                <a class="mdl-navigation__link"  href="index.html">首页</a>
+                <a class="mdl-navigation__link" href="forum.html">论坛</a>
+                <a class="mdl-navigation__link" href="##">淘宝</a>
+              </nav>
+            </div>
+            <span class="nex-mobile-title mdl-layout-title">
+              Nexus中文网
+            </span>
+            <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
+              <i class="material-icons">account_circle</i>
+            </button>
+            <div class="mdl-tooltip" data-mdl-for="login">
+              登录
+            </div>
+            <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
+              <i class="material-icons">assignment</i>
+            </button>
+            <div class="mdl-tooltip" data-mdl-for="register">
+              注册
+            </div>
+          </div>
+        </div>
+
+        <div class="nex-drawer mdl-layout__drawer ">
+          <div class="mdl-layout-title">
+            <a href="login.html"><img src="../images/user_por.png" class="user-img" />  <span class="nex-user">真是这样</span></a>
+            <div class="nex-drawer-icon">
+              <a href="##" id="email"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">email</i></span></a>
+              <div class="mdl-tooltip" for="email">
+                消息
+              </div>
+              <a href="##" id="fa"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">face</i></span><!-- <span class="mdl-badge" data-badge="4">新听众</span> --></a>
+              <div class="mdl-tooltip" for="fa">
+                新朋友
+              </div>
+              <a href="##" id="st"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">settings</i></span></a>
+              <div class="mdl-tooltip" for="st">
+                系统消息
+              </div>
+            </div>
+          </div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="list.html"><i class="material-icons">home</i> 首页</a>
+            <a class="mdl-navigation__link" href="forum.html"><i class="material-icons">forum</i> 论坛</a>
+            <a class="mdl-navigation__link" href="forum.html"><i class="tb"> </i> 淘宝</a>
+            <a class="mdl-navigation__link" href="zone1.html">个人中心[用于[测试]</a>
+            <div class="nex-drawer-separator"></div>
+          </nav>
+        </div>
+
+        <div class="nex-content mdl-layout__content">
+
+          <div class="login-float">
+            <div class="mdl-card mdl-shadow--6dp">
+              <div style="
+              padding-bottom: 0; text-align:center;" class="mdl-card__title mdl-color-text--white">
+              <i class="icon-close material-icons">clear</i>
+              <img style="margin:0 auto;" src="../images/logo.png" alt="">
+              </div>
+              <div  style="padding-top: 0;" class="mdl-card__supporting-text ">
+                <form action="#" style="padding-bottom:5px;">
+                  <div style="margin-top:-10px; width:100%;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="username" />
+                    <label class="mdl-textfield__label" for="username">用户名 / 邮箱</label>
+                    <span class="mdl-textfield__error">Only alphabet and no spaces, please!</span>
+                  </div>
+                  <div style="margin-top:-10px;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="password" id="userpass" />
+                      <label class="mdl-textfield__label" for="userpass">密码</label>
+                  </div>
+                  <div >
+                  <span id="home-register" style="float:left;font-size:12px;color:#4cb5a6;margin-top:-5px;cursor:pointer;" href="register.html">立即注册</span>
+
+                  <a style="float:right;font-size:12px;color:#4cb5a6;margin-top:-5px;" href="#">找回密码</a>
+                  </div>
+                </form>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">  
+                <div class="ologin">
+                <span>快捷登陆：</span><img width="18px" height="18px;" src="../images/Tencent_QQ.png" alt="">
+                </div>
+                <button  style="float:right;margin-right:20px; background:#4cb5ad; color:#fff;font-family:'微软雅黑'" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">登录</button>
+              </div>
+            </div>
+          </div>
+          <div class="register-float">
+            <div class="mdl-card mdl-shadow--6dp">
+              <div style="
+              padding-bottom: 0; text-align:center;" class="mdl-card__title mdl-color-text--white">
+                <i class="icon-close material-icons">clear</i>
+                <img style="margin:0 auto;" src="../images/logo.png" alt="">        
+              </div>
+              <div  style="padding-top: 0;" class="mdl-card__supporting-text ">
+                <form action="#" style="padding-bottom:5px;">
+                  <div style="margin-top:-10px; width:100%;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="username" />
+                    <label class="mdl-textfield__label" for="username"> 邮箱</label>
+                    <span class="mdl-textfield__error">Only alphabet and no spaces, please!</span>
+                  </div>
+                  <div style="margin-top:-10px; width:100%;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="username" />
+                    <label class="mdl-textfield__label" for="username">用户名</label>
+                    <span class="mdl-textfield__error">Only alphabet and no spaces, please!</span>
+                  </div>
+                  <div style="margin-top:-10px;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="userpass" />
+                  <label class="mdl-textfield__label" for="userpass">密码</label>
+                  </div>
+                  <div style="margin-top:-10px;" class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" id="userpass" />
+                    <label class="mdl-textfield__label" for="userpass">确认密码</label>
+                  </div>
+                  <div >
+                    <span id="home-login" style="float:right;font-size:12px;color:#4cb5a6;margin-top:-5px;z-index:2;cursor:pointer;" >已有账号，立即登录</span>
+                  </div>
+                </form>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">  
+                <div class="ologin">
+                  <span>快捷登陆：</span><img width="18px" height="18px;" src="../images/Tencent_QQ.png" alt="">
+                </div>
+                <button  style="float:right;margin-right:20px; background:#4cb5ad; color:#fff;font-family:'微软雅黑'" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">注册</button>
+              </div>
+            </div>
+          </div>
+
+          <a name="top"></a>
+          <div class="nex-be-together-section mdl-typography--text-center">
+            <div class="logo-font nex-slogan">Pixel 中文网</div>
+            <div class="logo-font nex-sub-slogan">欢迎来到Pixel中文网</div>
+            <div class="logo-font nex-create-character">
+            </div>
+
+            <a href="#screens">
+              <button class="nex-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">expand_more</i>
+              </button>
+            </a>
+          </div>
+          <div class="nex-more-section">
+            <div class="nex-section-title mdl-typography--display-1-color-contrast">
+              <a href=""><span class="nex-tag nex-default-color active">业界</span></a>
+              <a href=""><span class="nex-tag nex-default-color">爱谷歌</span></a>
+              <a href=""><span class="nex-tag nex-default-color">机情无限</span></a>
+              <a href=""><span class="nex-tag nex-default-color">安卓酷机</span></a>
+              <a href=""><span class="nex-tag nex-default-color">谷歌应用</span></a>
+              <a href=""><span class="nex-tag nex-default-color">Pixel</span></a>
+            </div>
+            <div class="nex-card-container mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__title nex-maker-info">
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /></a>
+                  <span class="nex-card-username">xxxxx</span>
+                  <span class="font-size-12"> 发表于两天前</span>
+                  <span class="nex-no">酷应用</span>
+                </div>
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-1.png" class="nex-img" /></a>
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">应用推荐：你懂得</a></h4>
+                </div>
+                <div class="mdl-card__supporting-text" >
+                  <ul class="nex-card-comment mdl-list" data-target="comm1">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class=" mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class=" mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm1"><i class="material-icons">comment</i></a>
+                  </div>
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                    点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__title nex-maker-info">
+
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /><span class="nex-card-username">xxxxx</span></a>
+                  <span class="font-size-12"> 发表于两天前</span>
+                  <span class="nex-no">安卓动态</span>
+                </div>
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-4.png" class="nex-img"></a>
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">我国360团队宣布成功破解谷歌pixel手机安全机制</a></h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <ul class="nex-card-comment mdl-list" data-target="comm2">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm2"><i class="material-icons">comment</i></a>
+                  </div>
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                    点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__title nex-maker-info">
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /><span class="nex-card-username">xxxxx</span></a>
+                  <span class="font-size-12"> 发表于两天前</span>
+                  <span class="nex-no">安卓动态</span>
+                </div>
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-2.png" class="nex-img"/></a>
+                </div>
+                <div class="mdl-card__title">
+                   <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">谷歌助理可以在社交媒体上分享网站的文章</a></h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <ul class="nex-card-comment mdl-list" data-target="comm3">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm3"><i class="material-icons ">comment</i></a>
+                  </div>
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                     点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-1.png" class="nex-img"/></a>
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">应用推荐：你懂得</a></h4>
+                </div>
+                <div class="mdl-card__title nex-maker-info">
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /><span class="nex-card-username">xxxxx</span></a>
+                  <span class="font-size-12"> 发表于两天前</span>
+                  <span class="nex-no">酷应用</span>
+                </div>
+                <div class="mdl-card__supporting-text" >
+                  <ul class="nex-card-comment mdl-list" data-target="comm4">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm4"><i class="material-icons">comment</i></a>
+                  </div>
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                    点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-4.png" class="nex-img"></a>
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">阅读更多</a></h4>
+                </div>
+                <div class="mdl-card__title nex-maker-info">
+
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /><span class="nex-card-username">xxxxx</span></a>
+                  <span class="font-size-12"> 2016-11-01 </span>
+                  <span class="nex-no">安卓动态</span>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <ul class="nex-card-comment mdl-list" data-target="comm5">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class=" mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm5"><i class="material-icons">comment</i></a>
+                  </div>
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                    点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                  <a href="##"><img src="../images/more-from-2.png" class="nex-img"/></a>
+                </div>
+                <div class="mdl-card__title">
+                  <h4 class="mdl-card__title-text"><a href="content.html" class="nex-card-title">谷歌助理可以在社交媒体上分享网站的文章</a></h4>
+                </div>
+                <div class="mdl-card__title nex-maker-info">
+                  <a href=""><img src="../images/user_por.png" class="page-maker" /><span class="nex-card-username">xxxxx</span></a>
+                  <span class="font-size-12"> 发表于两天前</span>
+                  <span class="nex-no">安卓动态</span>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <ul class="nex-card-comment mdl-list" data-target="comm6">
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-avatar">person</i>
+                        <span class="font-default">Ever</span>
+                        <span class="nex-card-comment-time">1分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          你咋不上天呢
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杨鹏义</span>
+                        <span class="nex-card-comment-time">5分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我正在上天
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平</span> 
+                        <span class="nex-card-comment-time">9分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">郑心享</span>
+                        <span class="nex-card-comment-time">10分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          我也在天上呀
+                        </span>
+                      </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--three-line">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span class="font-default">杜大平小号</span> 
+                        <span class="nex-card-comment-time">11分钟前</span>
+                        <span class="mdl-list__item-text-body">
+                          看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions">
+                  <div class="float-left">
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">thumb_up</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon"><i class="material-icons">share</i></a> 
+                    <a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon nex-comment" for="comm6"><i class="material-icons">comment</i></a>
+
+                  </div>                  
+                  <a class="nex-link mdl-button mdl-js-button float-right" href="">
+                     点击阅读
+                    <i class="material-icons">chevron_right</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <nav class="mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+              <a href="##" class="nex-page">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon  mdl-color-text--grey-900" role="presentation" data-upgraded=",MaterialButton,MaterialRipple">
+                  <i class="material-icons">arrow_back</i>
+                <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                <span>上一页</span>
+              </a>
+              <a href="##" class="nex-nextpage nex-page">
+                <span>下一页</span>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon  mdl-color-text--grey-900" role="presentation" data-upgraded=",MaterialButton,MaterialRipple">
+                  <i class="material-icons">arrow_forward</i>
+                <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+              </a>
+            </nav>
+          </div>
+          <footer class="nex-footer mdl-mega-footer">
+            <div class="mdl-mega-footer--top-section">
+              <div class="mdl-mega-footer--left-section nex-footer-section">
+                <button class="mdl-mega-footer--social-btn microblog"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn microblog"></button>
+                &nbsp;
+                <button class="mdl-mega-footer--social-btn microblog"></button>
+              </div>
+              <div class="mdl-mega-footer--right-section">
+            </div>
+            <div class="mdl-mega-footer__middle-section mdl-grid">
+              <div class="mdl-cell--8-col mdl-cell mdl-cell--12-tablet mdl-cell--12-phone">
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">关于我们</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">Pixel</a></li>
+                    <li><a href="#">代购</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">Nexus系列</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">Nexus 6P</a></li>
+                    <li><a href="#">Nexus 5x</a></li>
+                    <li><a href="#">Nexus 7</a></li>
+                    <li><a href="#">Nexus 9</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">讨论区</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">爱谷歌</a></li>
+                    <li><a href="#">业界</a></li>
+                    <li><a href="#">配件周边</a></li>
+                    <li><a href="#">讨论区</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">基础入门</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">基础入门</a></li>
+                    <li><a href="#">进阶玩法</a></li>
+                    <li><a href="#">玩机教程</a></li>
+                    <li><a href="#">moto x</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">安卓地带</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">安卓地带</a></li>
+                    <li><a href="#">苹果</a></li>
+                    <li><a href="#">那些rom</a></li>
+                    <li><a href="#">机情无限</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mdl-cell--4-col mdl-cell mdl-cell--12-tablet mdl-cell--12-phone">
+                <h1 class="mdl-mega-footer__heading">商业链接</h1>
+                <ul class="nex-footer-right">
+                  <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">果粉社区</a></li>
+                  <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">淘宝</a></li>
+                  <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">百度首页</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mdl-mega-footer--bottom-section">
+              <!-- <p class="mdl-typography--font-light">Pixel中文网www.pixcn.cn是为全球所有华人google迷提供交流最新Pixel,nexus 6p, nexus 5x,nexus 7,nexus 9, moto x+1, moto g二代谷歌，安卓资讯，业界科技信息，使用和玩机技巧的科技资讯社交媒体网站</p>
+              <p class="mdl-typography--font-light">兄弟站点果粉社区</p>
+              <p class="mdl-typography--font-light">Powered by 摩酷 © 2011-2013</p>
+              <p class="mdl-typography--font-light">nexus中文网QQ群(只加注册用户):13128324(主力群), 188153148,258269925,moto x粉丝群:1299655</p> -->
+              <a class="nex-link mdl-typography--font-light" href="##">桌面版</a>
+              <a class="nex-link mdl-typography--font-light" href="##">手机版</a>
+              <div class="nex-drawer-separator"></div>
+              <p class="mdl-typography--font-light font-size-min">Powered by 摩酷 © 2011-2013 <a href="" class="nex-link mdl-typography--font-light">( 鄂ICP备16014165号-3 )</a></p>
+              <p class="mdl-typography--font-light font-size-min">Pixel中文网www.pixcn.cn是为全球所有华人google迷提供交流最新Pixel,nexus 6p, nexus 5x,nexus 7,nexus 9, moto x+1, moto g二代谷歌，安卓资讯，业界科技信息，使用和玩机技巧的科技资讯社交媒体网站Pixel中文网</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <a href="##" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="material-icons">add</i></a>
+      <a href="##" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="material-icons">add</i></a>
+
+      <a href="##" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="material-icons">add</i></a>
+      <a href="##" class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><i class="material-icons">add</i></a>
+      <ul class="mdl-menu mdl-js-menu mdl-menu--top-right mdl-js-ripple-effect" for="menu-dropdown">
+        <li class="mdl-menu__item">投稿(New Post)</li>
+        <li class="mdl-menu__item">收藏(Favorite)</li>
+        <li class="mdl-menu__item">Rss</li>
+      </ul>
+      <script src="../js/material.min.js"></script>
+      <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="../js/index.js"></script>
+      <script>
+
+      $(function(){        
+        $("#login").click(function(){
+          $(".login-float").fadeIn("fast");
+        });
+        $(".icon-close").click(function(){
+          $(".login-float").fadeOut("fast");
+          $(".register-float").fadeOut("fast");
+        });
+        $("#register").click(function(){
+          $(".register-float").fadeIn("fast");
+        });
+        $("#home-login").click(function(){
+          $(".register-float").fadeOut("fast");
+          $(".login-float").fadeIn("fast");
+        });
+        $("#home-register").click(function(){
+          $(".register-float").fadeIn("fast");
+          $(".login-float").fadeOut("fast");          
+        });
+      })
+
+      </script>
+    </body>
+  </html>

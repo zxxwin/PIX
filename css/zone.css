@@ -1,0 +1,195 @@
+body {
+	background: #E5EFF4;
+}
+.nex-zone-header-uinfo {
+	float: left;
+	margin-left: 2%;
+	width: auto;
+}
+.nex-zone-udata {
+	border-left: 1px solid #ccc;
+	padding: 0 20px;
+}
+.nex-zone-udata td:first-child {
+	font-weight: 600;
+}
+.nex-zone-header-h6 {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	color: #324455;
+}
+
+.padding-0 {
+	padding:0; 
+}
+.margin-top-0 {
+	margin-top: 0;
+}
+.nex-zone-header-logo {
+	float: left;
+	width: 30%;
+	margin: 20px 0 20px 20px;
+}
+.nex-zone-header-logo img{
+	width: 95%;
+	height: 95%;
+	border-radius: 50%;
+	box-shadow: 0px 1px 6px #ccc;
+}
+.nex-zone-logo{
+	width: 80%;
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px #D6D6D6;
+}
+.nex-zone-header-uinfo .nex-zone-header-h6 {
+
+}
+.nex-zone-catabar {
+	justify-content: flex-start;
+}
+.nex-be-together-section {
+	background:#FAFAFA;
+	background-image: url(../images/zone-bg.jpg);
+	background-repeat: no-repeat;
+	height: 200px; 
+	background-size: 100% 80%;
+	position: relative;
+}
+.nex-zone-header-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-top: 6%;
+}
+.nex-zone-header-content h6 {
+	color: #fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: 300;
+}
+.nex-zone-header-middle {
+	width: 10%;
+}
+.nex-zone-header-left {
+	width: 40%;
+	text-align: right;
+	padding-right: 30px;
+}
+.nex-zone-header-right {
+	width: 40%;
+	text-align: left;
+	padding-left: 30px;
+}
+.nex-zone-lastlogin {
+	font-size:12px; 
+	width: 60%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	color: #999;
+}
+.nex-zone-lastlogin i {
+	font-size: 12px;
+	margin-bottom: 1px;
+	color: #5b96d2;
+}
+.nex-zone-link {
+	color: #fff;
+	text-decoration: none;
+}
+.nex-zone-link:hover {
+	color: #bed6e6;
+
+}
+.nex-zone-user-edit i{
+	font-size:16px;
+	margin-right: 10px; 
+	color:#bed6e6; 
+}
+.nex-zone-user-edit i:hover {
+	color: rgb(255,64,129);
+}
+.nex-zone-card-title {
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+.mdl-card__title-text.font-default {
+	font-size: 14px;
+}
+.nex-zone-user-table td:first-child {
+	color: #000;
+}
+.nex-zone-statistic td{
+	width: 100px;
+	height: 100px;
+	border:1px solid #ccc;
+	text-align: center;
+}
+.nex-zone-statistic td:hover {
+	background: #E5EFF4; 
+}
+.nex-zone-statistic a {
+	text-decoration: none;
+}
+.nex-drawer .mdl-layout-title {
+	padding: 40px;
+	height: 240px!important;
+	background: #F2F6F8;
+}
+.nex-zone-drawer-logo {
+	display: block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.nex-zone-drawer-logo:before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #A6D850;
+	right: -5px;
+	top:45%;
+}
+.nex-zone-drawer-logo img {
+	width: 100%;
+	box-shadow: 0px 1px 3px #D6D6D6;
+}
+.nex-zone-drawer-un {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #778A95;
+}
+.nex-zone-navigation,.nex-drawer {
+	background: #F2F6F8;
+}
+/****/
+.nex-more-section {
+	background: url(../images/bigcity.jpg) no-repeat;
+}
+
+@media (max-width: 900px) { 
+	
+	.nex-zone-header-middle {
+		width: 30%;
+	}
+	.nex-zone-header-left {
+		width: 30%;
+		padding-right: 5px;
+	}
+	.nex-zone-header-right {
+		width: 30%;
+		padding-left: 5px;
+	}
+	/*.nex-zone-header-content {
+		padding-top: 27%;
+	}*/
+}

@@ -1,0 +1,100 @@
+.fixed-btn-box {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;      
+  z-index: 5;
+}
+.fixed-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #00bcd4;
+  transition:bottom .2s; 
+}
+.fixed-btn:hover {
+  background: #3EDBEF;
+}
+.fixed-btn i{
+  color: #fff;  
+}
+  .fixed-btn-toTop, .fixed-btn-msg, .fixed-btn-create {
+    bottom: 140px;
+    z-index: 6;  
+  }
+  .fixed-btn-msg{
+    bottom: 100px;
+    z-index: 7;      
+  }
+  .fixed-btn-create{
+    bottom: 60px;
+    z-index: 8;
+  }
+  .fixed-btn-add{
+    z-index: 9;   
+    transform:rotate(45deg);
+    transition:transform .1s;  
+  }
+@media screen and (max-width: 420px) {
+  .tip-top {
+    display: block;
+  }
+}
+.block-header {
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  /*transition:opacity .2s;*/
+}
+  .block-icon{
+    position: relative;
+    top: 90px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .favor {
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    color: orange;
+  }
+.block-info-box {
+  /*transition:background .2s;*/
+}
+.block-info {
+  width: 100%;
+  height: 55px;
+  padding: 25px 0 0 0;
+  text-align: center;
+  line-height: 200%;
+  transition:opacity .2s;
+}
+  .block-info p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 200%;
+    color: #999;
+  }
+  .block-name {
+    display: none;
+    line-height: 39px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    vertical-align: middle;
+  }
+.forum-header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  /*transition:background .2s;*/
+  z-index: 2;
+}
+.forum-header-icon {
+  margin-top: 10px;
+  line-height: 40px;
+}
+.forum-header-icon i {
+  color: #fff;
+}

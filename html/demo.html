@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  
+  <title>Pixel中文网-论坛</title>
+  <meta name="viewport" content="width=320.1,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+  <meta name="apple-mobile-web-app-title" content="Pixel中文网-为信仰而充值" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  
+  <link rel="stylesheet" href="../css/icon.css">
+  <link rel="stylesheet" href="../css/material.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/forum.css">
+  <link rel="stylesheet" href="../css/forum-test.css">
+  <link rel="stylesheet" href="../css/artical.css">
+  <link rel="stylesheet" href="../css/atc-cmt.css">
+  <style>
+    .artical-subnav {
+    }
+    .artical-subnav a {
+      display: inline-block;
+      padding: 5px;
+      font-family: "Microsoft Yahei";
+      font-size: 15px;
+      background: #fff;
+    }
+    .atc-cmt-box-footer {
+    }
+  </style>
+</head>
+<body>
+
+                <a href="#"><i class="atc-cmt-icon-rpl material-icons">reply</i></a>
+              <div class="atc-cmt-box-footer">
+                <div class="cmt-textarea-box">
+                  <a style="align-self:center;width:36px;height:36px;"  class="atc-cmt-por" href="#"><img src="../images/user2.jpeg" alt=""></a>
+                  <textarea style="height:100%; margin-left:10px;border:none;resize:none;" name="contents" class="rpl-textarea" placeholder="我的评论：" ></textarea>
+                </div>
+                <div class="cmt-opt">
+                  <div class="cmt-opt-icons">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+                      <i class="material-icons">mood</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+                      <i class="material-icons">photo_camera</i>
+                    </button>
+                    <button style="font-size:16px;" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+                      @
+                    </button>
+                  </div>
+                  <button style="color:#999;" class="mdl-button mdl-button--primary">发表</button>
+                </div>
+              </div>
+
+
+  <button id="show-dialog" type="button" class="mdl-button">Show Dialog</button>
+  <dialog class="mdl-dialog">
+    <h4 style="background:url(../images/mdl_bg.jpg) center" class="mdl-dialog__title">Allow data collection?</h4>
+    <div class="mdl-dialog__content">
+      <p>
+        Allowing us to collect data will let us get you the information you want faster.
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Agree</button>
+      <button type="button" class="mdl-button close">Disagree</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+ <button type="button" class="mdl-button show-modal">Show Modal</button>
+  <dialog class="mdl-dialog">
+    <div class="mdl-dialog__content">
+      <p >
+        Allow this site to collect usage data to improve your experience?
+      </p>
+    </div>
+    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+      <button type="button" class="mdl-button">Agree</button>
+      <button type="button" class="mdl-button close">Disagree</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showModalButton = document.querySelector('.show-modal');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showModalButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+
+<div class="bg mdl-layout__container">
+<div class="fixed-btn-box">
+  <button id="fixed-btn-toTop" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+  <!-- <div class="tip-top mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-toTop">返回顶部</div> -->
+
+  <button id="fixed-btn-msg" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">notifications</i>
+  </button>
+  <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-msg">最新消息</div> -->
+
+  <button id="fixed-btn-create" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">create</i>
+  </button>
+  <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-create">发表主题</div> -->
+
+  <button id="fixed-btn-add" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">add</i>
+  </button>  
+</div>
+<div class="rpl-dlg-box">
+  <div class="rpl-dlg">
+    <div style="background:url(../images/mdl_bg.jpg) center" class="rpl-dlg-header">
+      <div class="rpl-dlg-users">
+        <img width="50px;" src="../images/user_por.png" alt="">
+        <p>
+         沙发~沙发~沙发~沙发~ a long long sofa!!!
+        </p>
+      </div>
+    </div>
+    <div class="rpl-dlg-body">      
+      <div class="atc-cmt-box-footer">
+        <div class="cmt-textarea-box">
+          <textarea style="height:160px; margin-left:10px;border:none;resize:none;" name="contents" class="rpl-textarea" placeholder="我的评论："  ></textarea>
+        </div>
+        <div class="cmt-opt">
+          <div class="cmt-opt-icons">
+            <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+              <i class="material-icons">mood</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+              <i class="material-icons">photo_camera</i>
+            </button>
+            <button style="font-size:16px;" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+              @
+            </button>
+          </div>
+          <button style="color:#999;" class="mdl-button mdl-button--primary">发表</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="nex-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <span class="nex-title mdl-layout-title">Pixel中文网</span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="nex-header-spacer mdl-layout-spacer"></div>
+        <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
+            <i class="material-icons">search</i>
+          </label>
+
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search-field">
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div class="nex-navigation-container">
+          <nav class="nex-navigation mdl-navigation">
+            <a class="mdl-navigation__link"  href="index.html">首页</a>
+            <a class="mdl-navigation__link" href="forum.html">论坛</a>
+            <a class="mdl-navigation__link" href="##">淘宝</a>
+          </nav>
+        </div>
+        <span class="nex-mobile-title mdl-layout-title">
+          Nexus中文网
+        </span>
+        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
+          <i class="material-icons">account_circle</i>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="login">
+          登录
+        </div>
+        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
+          <i class="material-icons">assignment</i>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="register">
+          注册
+        </div>
+      </div>
+    </div>
+    <div class="nex-drawer mdl-layout__drawer">
+      <div class="mdl-layout-title">
+        <a href="##"><img src="../images/user_por.png" class="user-img" />  <span class="nex-user">真是这样</span></a>
+        <div class="nex-drawer-icon">
+          <a href="##" id="email"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">email</i></span></a>
+          <div class="mdl-tooltip" for="email">
+            消息
+          </div>
+          <a href="##" id="fa"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">face</i></span><!-- <span class="mdl-badge" data-badge="4">新听众</span> --></a>
+          <div class="mdl-tooltip" for="fa">
+            新朋友
+          </div>
+          <a href="##" id="st"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">settings</i></span></a>
+          <div class="mdl-tooltip" for="st">
+            系统消息
+          </div>
+        </div>
+      </div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="list.html"><i class="material-icons">home</i> 首页</a>
+        <a class="mdl-navigation__link" href="forum.html"><i class="material-icons">forum</i> 论坛</a>
+        <a class="mdl-navigation__link" href="forum.html"><i class="tb"> </i> 淘宝</a>
+        <a class="mdl-navigation__link" href="zone1.html">个人中心[用于[测试]</a>
+        <div class="nex-drawer-separator"></div>
+      </nav>
+    </div>
+
+    <div class="mdl-layout__content">
+<!-- MDL Tab Container -->
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <!-- Tab Bars -->
+  <div class="mdl-tabs__tab-bar">
+      <a href="#asia-panel" class="mdl-tabs__tab is-active">Asia</a>
+      <a href="#europe-panel" class="mdl-tabs__tab">Europe</a>
+      <a href="#america-panel" class="mdl-tabs__tab">America</a>
+      <a href="#t-panel" class="mdl-tabs__tab">t</a>
+  </div>
+
+  <!-- MDL tab panels, is-active to denote currently active -->
+  <div class="mdl-tabs__panel is-active" id="asia-panel">
+    <ul>
+      <li>India</li>
+      <li>China</li>
+      <li>Japan</li>
+      <li>Indonesia</li>
+      <li>Pakistan</li>
+      <li>Saudi Arabia</li>
+      <li>Nepal</li>
+    </ul>
+  </div>
+  
+  <!-- MDL Tab panel 2 -->
+  <div class="mdl-tabs__panel" id="europe-panel">
+    <ul>
+      <li>England</li>
+      <li>France</li>
+      <li>Germany</li>
+      <li>Spain</li>
+    </ul>
+  </div>
+  
+  <!-- MDL Tab panel 3 -->
+  <div class="mdl-tabs__panel" id="america-panel">
+    <ul>
+      <li>United States of America</li>
+      <li>Canada</li>
+    </ul>
+  </div>
+  <!-- MDL Tab panel 3 -->
+  <div class="mdl-tabs__panel" id="t-panel">
+    <ul>
+      <li>United States of America</li>
+      <li>Canada</li>
+    </ul>
+  </div>
+  
+</div>
+    </div>
+  </div>  
+</div>
+<script src="../js/material.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<!-- <script type="text/javascript" src="../js/forum-pixel.js"></script> -->
+<script>
+
+  $(".rpl-dlg-box").css("width",$(window).width());
+  $(".rpl-dlg-box").css("height",$(window).height());
+  $(window).resize(function(){
+    $(".rpl-dlg-box").css("width",$(window).width());
+    $(".rpl-dlg-box").css("height",$(window).height());
+  });
+  $(".rpl-dlg-btn-cl").click(function(){
+    $(".rpl-dlg-box").css("display","none");
+  });
+  $(".atc-cmt-icon-rpl").click(function(){
+    $(".rpl-dlg-box").css("display","block");
+  });
+</script>
+  
+</body>
+</html>

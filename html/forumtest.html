@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  
+  <title>Pixel 中文网-论坛</title>  
+  <link rel="stylesheet" href="../css/icon.css">
+  <link rel="stylesheet" href="../css/material.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/forum.css">
+  <link rel="stylesheet" href="../css/forum-test.css">
+</head>
+<body>
+<div class="fixed-btn-box">
+  <button id="fixed-btn-toTop" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+  <!-- <div class="tip-top mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-toTop">返回顶部</div> -->
+
+  <button id="fixed-btn-msg" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">notifications</i>
+  </button>
+  <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-msg">最新消息</div> -->
+
+  <button id="fixed-btn-create" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">create</i>
+  </button>
+  <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-create">发表主题</div> -->
+
+  <button id="fixed-btn-add" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">add</i>
+  </button>  
+</div>
+<div class="bg mdl-layout__container">
+  <div class="mdl-layout mdl-js-layout">
+    <div class=" forum-header">
+      <div style="padding:0;" class="header-bar mdl-grid"><!-- main  --> 
+        <div class="mdl-cell mdl-cell--12-col" >
+          <a href="forum.html">
+            <button class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+              <i class="material-icons">arrow_back</i>
+            </button>
+          </a>
+          <span class="block-name" > Pixel 手机</span>
+
+        <button style="float:right;"  class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect forum-header-icon " id="more-button">
+          <i class="material-icons">more_vert</i>
+        </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">机情无限</li>
+            <li class="mdl-menu__item">App那些事</li>
+          </ul>
+<div class="class1"></div>
+        <button style="float:right;"  class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect"  id="more-sort-button">
+          <i class="material-icons">sort</i>
+        </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-sort-button">
+            <li class="mdl-menu__item">默认</li>
+            <li class="mdl-menu__item">最新</li>
+            <li class="mdl-menu__item">最热</li>
+            <li class="mdl-menu__item">精华</li>
+          </ul>
+
+        <button style="float:right;" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+          <i class="material-icons">search</i>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-layout__content">
+      <div class="main-full" style="background:#398bb6;margin:0 auto;">
+        <div class="main mdl-grid" style="padding:0;">
+          <div class="block-header">
+            <span class="block-icon"><img src="../images/pixel-sm.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="main-full block-info-box" style="background:#fff;margin:0 auto;padding:0;">
+        <div class="main mdl-grid"  style="padding:0;">
+          <div class="block-info" id="blockInfo">
+            Pixel 手机专区
+            <p>
+              今日主题：666&emsp;今日回帖：1024&emsp;<a href="#"><i class=" favor material-icons">star</i> </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main mdl-grid">
+
+        <div class="list-wrapper mdl-cell mdl-cell--9-col">
+          <div class="list-nav">
+            
+          </div>
+          <div class="list mdl-shadow--2dp">
+           <!--  <div class="list-pin mdl-shadow--2dp">
+            </div> --> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pin_3.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pin_2.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pin_1.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/hot_3.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pollsmall.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pollsmall.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-item">
+              <table>
+                <tr>
+                  <td class="user-portrait-box">
+                    <div class="user-portrait">
+                      <a href="#"><img src="../images/portrait.png" width="48px" height="48px" alt=""></a>
+                    </div>                
+                  </td>
+                  <td id="test">
+                    <div class="artical-box">
+                      <div class="item-title" id="itemTitle" >
+                        <img src="../images/pollsmall.gif" alt="">
+                        <a href="article.html">如何解决安卓刷机出现adb或者fastboot不是内部或者外部命令</a>
+
+                      </div>
+                      <span style="display:block;margin-top:5px;">
+                        <a href="#">newX</a><strong> · </strong>
+                        <time>20分钟前</time><strong> · </strong>
+                        <span class="mdl-cell--hide-phone">最新回复: <a href="#">newX</a><span><strong> · </strong></span></span> 1024回帖<strong> · </strong>1024查看            
+                      </span>
+                    </div>              
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            <div class="list-footer mdl-shadow--2dp">
+              <ul class="pagination">
+                <li><a class="pageNow" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">99</a></li>
+                <li><a href="#">100</a></li>
+
+                <div class="float-clr"></div>
+              </ul>
+              <div class="pagination-btn">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                  <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                  <i class="material-icons">arrow_forward</i>
+                </button>
+              </div>
+              <div class="float-clr"></div>              
+            </div>            
+          </div>
+        </div>
+        <div style="margin-top: 8px;" class="side-pannel mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+          <div class="userInfo mdl-shadow--2dp">
+            <div class="user-portrait">
+              <a href="#"><img src="../images/user_por.png" width="48px" height="48px" alt=""></a>
+            </div>
+            <div class="user-name">
+              <a href="#">newX</a>
+              <span>，晚上好！</span>
+            </div>
+            <div class="icon-box">
+              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+                <i class="btn-noti material-icons">notifications</i>
+                <span class="mdl-badge" data-badge="4">消息</span>
+              </button>
+              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+                <i class="btn-grade material-icons">grade</i>
+                <span>收藏</span>
+              </button>
+              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+                <i class="btn-settings material-icons">settings</i>
+                <span>设置</span>
+              </button>
+              <button class="btn-write mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+                <i class="btn-create material-icons">create</i>
+                发表主题
+              </button>
+            </div>
+          </div>
+
+          <div class="ad mdl-shadow--2dp">
+            广告
+          </div>
+          <div class="artical-hot mdl-shadow--2dp">
+            <div class="artical-hot-header">
+              最近热门主题
+            </div>
+            <div class="artical-hot-item">
+              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user.png" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">小编认真的给大家推荐这款应用：funso加速器，官网地址：www.funso.com</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-hot-item">
+              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user.png" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">小编认真的给大家推荐这款应用：funso加速器，官网地址：www.funso.com</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-hot-item">
+              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user.png" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">小编认真的给大家推荐这款应用：funso加速器，官网地址：www.funso.com</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-hot-item">
+              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user.png" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">小编认真的给大家推荐这款应用：funso加速器，官网地址：www.funso.com</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-hot-item">
+              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user.png" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">小编认真的给大家推荐这款应用：funso加速器，官网地址：www.funso.com</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="artical-new mdl-shadow--2dp">
+            <div class="artical-new-header">
+              最新发表主题
+            </div>
+            <div class="artical-new-item">              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user2.jpeg" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">  预览谷歌Pixel手机首周市场表现超nexus 6p</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-new-item">              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user2.jpeg" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">  预览谷歌Pixel手机首周市场表现超nexus 6p</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-new-item">              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user2.jpeg" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">  预览谷歌Pixel手机首周市场表现超nexus 6p</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-new-item">              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user2.jpeg" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">  预览谷歌Pixel手机首周市场表现超nexus 6p</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="artical-new-item">              
+              <table>
+                <tr>
+                  <td>
+                    <a href="#" class="user-portrait-sm" >
+                      <img src="../images/user2.jpeg" width="36px" height="36px" alt="">
+                    </a>
+                  </td>
+                  <td>
+                  <a href="#">  预览谷歌Pixel手机首周市场表现超nexus 6p</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <footer class="nex-footer mdl-mega-footer">
+        <div class="mdl-mega-footer--top-section">
+          <div class="mdl-mega-footer--left-section nex-footer-section">
+            <button class="mdl-mega-footer--social-btn microblog"></button>
+            &nbsp;
+            <button class="mdl-mega-footer--social-btn microblog"></button>
+            &nbsp;
+            <button class="mdl-mega-footer--social-btn microblog"></button>
+          </div>
+          <!-- <div class="mdl-mega-footer--right-section">
+            <a class="mdl-typography--font-light" href="#top">
+              回到顶部
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div> -->
+        </div>
+        <div class="mdl-mega-footer__middle-section mdl-grid">
+          <div class="mdl-cell--8-col mdl-cell mdl-cell--12-tablet mdl-cell--12-phone">
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">关于我们</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">Pixel</a></li>
+                <li><a href="#">代购</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">Nexus系列</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Nexus 6P</a></li>
+                <li><a href="#">Nexus 5x</a></li>
+                <li><a href="#">Nexus 7</a></li>
+                <li><a href="#">Nexus 9</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">讨论区</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">爱谷歌</a></li>
+                <li><a href="#">业界</a></li>
+                <li><a href="#">配件周边</a></li>
+                <li><a href="#">讨论区</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">基础入门</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">基础入门</a></li>
+                <li><a href="#">进阶玩法</a></li>
+                <li><a href="#">玩机教程</a></li>
+                <li><a href="#">moto x</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">安卓地带</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">安卓地带</a></li>
+                <li><a href="#">苹果</a></li>
+                <li><a href="#">那些rom</a></li>
+                <li><a href="#">机情无限</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell--4-col mdl-cell mdl-cell--12-tablet mdl-cell--12-phone">
+            <h1 class="mdl-mega-footer__heading">商业链接</h1>
+            <ul class="nex-footer-right">
+              <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">果粉社区</a></li>
+              <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">淘宝</a></li>
+              <li><i class="material-icons v-middle">link</i> <a href="" class="nex-ad-link">百度首页</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mdl-mega-footer--bottom-section">
+          <!-- <p class="mdl-typography--font-light">Pixel中文网www.pixcn.cn是为全球所有华人google迷提供交流最新Pixel,nexus 6p, nexus 5x,nexus 7,nexus 9, moto x+1, moto g二代谷歌，安卓资讯，业界科技信息，使用和玩机技巧的科技资讯社交媒体网站</p>
+          <p class="mdl-typography--font-light">兄弟站点果粉社区</p>
+          <p class="mdl-typography--font-light">Powered by 摩酷 © 2011-2013</p>
+          <p class="mdl-typography--font-light">nexus中文网QQ群(只加注册用户):13128324(主力群), 188153148,258269925,moto x粉丝群:1299655</p> -->
+          <a class="nex-link mdl-typography--font-light" href="##">桌面版</a>
+          <a class="nex-link mdl-typography--font-light" href="##">手机版</a>
+          <div class="nex-drawer-separator"></div>
+          <p class="mdl-typography--font-light font-size-min">Powered by 摩酷 © 2011-2013 <a href="" class="nex-link mdl-typography--font-light">( 鄂ICP备16014165号-3 )</a></p>
+          <p class="mdl-typography--font-light font-size-min">Pixel中文网www.pixcn.cn是为全球所有华人google迷提供交流最新Pixel,nexus 6p, nexus 5x,nexus 7,nexus 9, moto x+1, moto g二代谷歌，安卓资讯，业界科技信息，使用和玩机技巧的科技资讯社交媒体网站Pixel中文网</p>
+        </div>
+      </footer>
+    </div>
+  </div>  
+</div>
+<script src="../js/material.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/forum-pixel.js"></script>
+</body>
+</html>

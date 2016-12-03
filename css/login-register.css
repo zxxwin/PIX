@@ -1,0 +1,75 @@
+body {
+	/*background: #fafafa;*/
+}
+.main {
+	padding-top: 50px; 
+}
+.login-box {
+	/*margin: 30px auto 51px;*/
+	margin: 0 auto;
+	/*background: #fafafa;*/
+}
+
+.login-float, .register-float {
+	/*margin: 30px auto 51px;*/
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 330px;
+	height: 305px;
+	margin: auto;
+	z-index: 15;
+	/*background: #fafafa;*/
+}
+.register-float {
+	height: 417px;
+}
+.icon-close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+	color: #ccc;
+}
+label i {
+	font-size: 12px;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+form {
+	padding: 20px;
+}
+@media screen and (min-width: 760px){
+	.main {
+		width: 80%;
+	}
+	.login-box { 
+		width: 380px;		
+	}
+}
+
+@media screen and (max-width: 420px){
+	.main {
+		/*width: 100%;*/
+	}
+	.login-box { 
+		width: auto;		
+	}
+}
+.login-logo {
+	text-align: center;
+	/*margin-bottom: 20px;*/
+}
+.ologin {
+	display: inline;
+}
+.ologin span {
+	padding-top: 10px;
+	margin-left: 30px;
+	font-size: 12px;
+	line-height: 36px;
+	color: #999;
+}
