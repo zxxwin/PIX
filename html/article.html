@@ -619,30 +619,25 @@
   });
 
   if($(window).width()<420){
-   var unResize = false;
 
     $("#cmt-ta").focus(function(){
-      $(".cmt-textarea-box").css("margin-top","70px");
       $("#sct").click();
       document.getElementById("sct").click();
-      unResize = true;
+      this.focus();
+      $(".artical-subnav").css("position","absolute");
      })
 
-    $(window).resize(function() {
-      if(unResize) {
-        $(".cmt-textarea-box").css("margin-top","0");
-        unResize = false;
-        
-      }
- 
-      // if(!unResize){
-      //   $(".cmt-textarea-box").css("margin-top","70px");
-      //   unResize = true;
-      // }else{
-      //   $(".cmt-textarea-box").css("margin-top","0");
-      //   unResize = false;
-      // }
-  });
+  //   var unResize = false;
+  //   $(window).resize(function() {
+
+  //     if(!unResize){
+  //       $(".cmt-textarea-box").css("margin-top","70px");
+  //       unResize = true;
+  //     }else{
+  //       $(".cmt-textarea-box").css("margin-top","0");
+  //       unResize = false;
+  //     }
+  // });
 
 
     $(".fixed-btn-box").css("display","bolck");
