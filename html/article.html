@@ -254,6 +254,7 @@
               <div class="float-clr"></div>
             </artical>
           </section> 
+<a href="#cmt-ta" id="sct"></a>
 
           <section style="padding-top:0;" class="content mdl-shadow--2dp">
             <div class="atc-cmt-box">
@@ -380,7 +381,7 @@
               </div>
               <div class="atc-cmt-box-footer">
                 <div class="cmt-textarea-box">
-                  <a style="align-self:center;width:36px;height:36px;"  class="atc-cmt-por" href="#"><img src="../images/user2.jpeg" alt=""></a>
+                  <a style="align-self:center;width:36px;height:36px;"  class="atc-cmt-por" href="#"><img  src="../images/user2.jpeg" alt=""></a>
                   <textarea id="cmt-ta"  name="contents" class="rpl-textarea" placeholder="我的评论："></textarea>
                 </div>
                 <div class="cmt-opt">
@@ -618,6 +619,10 @@
   });
 
   if($(window).width()<420){
+$("#cmt-ta").focus(function(){
+  $("#sct").click();
+  document.getElementById("sct").click();
+})
     $(".fixed-btn-box").css("display","bolck");
     $(".article-main").css("margin-top","0");
     $(".mdl-cell").css("width","100% ");
@@ -664,44 +669,6 @@
      alert(document.documentElement.clientHeight)
   });
 */
-
-//文本时间获取焦点监听
-
-$("#send_context").on("focus",function(e){
-
-$(".article").height(oldInnerHeight-$("footer").height()); 
-
-//主要是下班这一段
-
-var SCROLLY=100;
-var TIMER_NAME=500; // focus事件中500ms后进行判断
-var MAX_SCROLL=99999; // 越大越好
-setTimeout(function() {
-     if(window.scrollY < SCROLLY) {
-       window.scrollTo(0, MAX_SCROLL);
-     }
-   }, TIMER_NAME);
-});
-
-
-//循环检测 仅限Android  iOS 不做修改
-if(BroswerUtil.CurrentSystem.system.android){
-setInterval(function () {
-var newInnerHeight = window.innerHeight;
-if(oldInnerHeight!=newInnerHeight){
-$(".article").height(newInnerHeight-footer_height); 
-var height =$(".guide-dialogue").height();
-$(".article").scrollTop(height);
-}else{
-if($(".swiper-Container").is(":hidden")){
-$(".article").height(oldInnerHeight-footer_height); 
-}
-}
-}, 300);
-}
-
-
-
 
 </script>
   
