@@ -620,13 +620,13 @@
 
   if($(window).width()<420){
 
-    // $("#cmt-ta").focus(function(){
-    // })
+    $("#cmt-ta").focus(function(){
+      $("#sct").click();
+      document.getElementById("sct").click();
+     })
 
     var unResize = false;
     $(window).resize(function() {
-      $("#sct").click();
-      document.getElementById("sct").click();
 
       if(!unResize){
         $(".cmt-textarea-box").css("margin-top","70px");
