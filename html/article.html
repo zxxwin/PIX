@@ -619,10 +619,24 @@
   });
 
   if($(window).width()<420){
-$("#cmt-ta").focus(function(){
-  $("#sct").click();
-  document.getElementById("sct").click();
-})
+
+    $("#cmt-ta").focus(function(){
+      $("#sct").click();
+      document.getElementById("sct").click();
+    })
+
+    var unResize = false;
+    $(window).resize(function() {
+      if(!unResize){
+        $(".cmt-textarea-box").css("margin-top","70px");
+        unResize = true;
+      }else{
+        $(".cmt-textarea-box").css("margin-top","0");
+        unResize = false;
+      }
+  });
+
+
     $(".fixed-btn-box").css("display","bolck");
     $(".article-main").css("margin-top","0");
     $(".mdl-cell").css("width","100% ");
