@@ -643,7 +643,7 @@
   });
 
 
-  if($(window).width()<420){
+ /* if($(window).width()<420){ //512 237
     $("#cmt-ta").focus(function(){
       // this.value = "？";
       // this.value = "";
@@ -663,6 +663,45 @@
      windowHeight = document.documentElement.clientHeight;
      alert(document.documentElement.clientHeight)
   });
+*/
+
+//文本时间获取焦点监听
+
+$("#send_context").on("focus",function(e){
+
+$(".article").height(oldInnerHeight-$("footer").height()); 
+
+//主要是下班这一段
+
+var SCROLLY=100;
+var TIMER_NAME=500; // focus事件中500ms后进行判断
+var MAX_SCROLL=99999; // 越大越好
+setTimeout(function() {
+     if(window.scrollY < SCROLLY) {
+       window.scrollTo(0, MAX_SCROLL);
+     }
+   }, TIMER_NAME);
+});
+
+
+//循环检测 仅限Android  iOS 不做修改
+if(BroswerUtil.CurrentSystem.system.android){
+setInterval(function () {
+var newInnerHeight = window.innerHeight;
+if(oldInnerHeight!=newInnerHeight){
+$(".article").height(newInnerHeight-footer_height); 
+var height =$(".guide-dialogue").height();
+$(".article").scrollTop(height);
+}else{
+if($(".swiper-Container").is(":hidden")){
+$(".article").height(oldInnerHeight-footer_height); 
+}
+}
+}, 300);
+}
+
+
+
 
 </script>
   
