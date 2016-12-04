@@ -642,11 +642,21 @@
     $(".rpl-dlg-box").css("display","block");
   });
 
+
   if($(window).width()<420){
     $("#cmt-ta").focus(function(){
-      this.value = " ";
-      this.value = "";
+      // this.value = "？";
+      // this.value = "";
+      windowHeight = document.documentElement.clientHeight;
+    // document.body.style.height = windowHeight + 'px';
+      this.value += windowHeight;
+
     })
+//     if (isAndroid) {
+//       alert("!")
+//     // var windowHeight = document.documentElement.clientHeight;
+//     // document.body.style.height = windowHeight + 'px';
+// }
   }
 
 </script>
