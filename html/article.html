@@ -22,13 +22,27 @@
   <link rel="stylesheet" href="../css/atc-cmt.css">
   <style>
     .artical-subnav {
-      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3px;
       /*top: 0;*/
       width: 100%;
-      background: #00bcd4;
       height: 50px;
       /*background: rgba(0,188,212,0.91);*/
       z-index: 99;
+    }
+    .artical-subnav p {
+      align-self: center;
+      opacity: 0;
+      margin-bottom: 0;
+      padding: auto 15px;
+      font-size: 18px;
+      font-family: "Microsoft Yahei";
+      line-height: 50px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      transition:opacity .3s;
     }
     .artical-subnav a {
      /* padding: 5px;
@@ -60,8 +74,8 @@
   </button>
   <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-msg">最新消息</div> -->
 
-  <button id="fixed-btn-create" class="fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
-    <i class="material-icons">create</i>
+  <button id="fixed-btn-create" class="atc-cmt-icon-rpl fixed-btn mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect ">
+    <i class="material-icons">reply</i>
   </button>
   <!-- <div class="mdl-tooltip mdl-tooltip--left" data-mdl-for="fixed-btn-create">发表主题</div> -->
 
@@ -83,7 +97,7 @@
     <div class="rpl-dlg-body">      
       <div class="atc-cmt-box-footer">
         <div class="cmt-textarea-box">
-          <textarea style="height:160px; margin-left:10px;border:none;resize:none;" name="contents" class="rpl-textarea" placeholder="我的评论："  ></textarea>
+          <textarea style="height:160px; margin-left:10px;border:none;resize:none;" name="contents" class="rpl-textarea rpl-textarea-dlg" placeholder="我的评论："  ></textarea>
         </div>
         <div class="cmt-opt">
           <div class="cmt-opt-icons">
@@ -104,86 +118,22 @@
     </div>
   </div>
 </div>
-  <div class="mdl-layout mdl-js-layout">
-    <!-- <div class="nex-header mdl-layout__header mdl-layout__header--waterfall">
-      <div class="mdl-layout__header-row">
-        <span class="nex-title mdl-layout-title">Pixel中文网</span>
-        <div class="nex-header-spacer mdl-layout-spacer"></div>
-        <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-          <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
-            <i class="material-icons">search</i>
-          </label>
-
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" id="search-field">
-          </div>
-        </div>
-        <div class="nex-navigation-container">
-          <nav class="nex-navigation mdl-navigation">
-            <a class="mdl-navigation__link"  href="index.html">首页</a>
-            <a class="mdl-navigation__link" href="forum.html">论坛</a>
-            <a class="mdl-navigation__link" href="##">淘宝</a>
-          </nav>
-        </div>
-        <span class="nex-mobile-title mdl-layout-title">
-          Nexus中文网
-        </span>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
-          <i class="material-icons">account_circle</i>
-        </button>
-        <div class="mdl-tooltip" data-mdl-for="login">
-          登录
-        </div>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
-          <i class="material-icons">assignment</i>
-        </button>
-        <div class="mdl-tooltip" data-mdl-for="register">
-          注册
-        </div>
-      </div>
-    </div>
-    <div class="nex-drawer mdl-layout__drawer">
-      <div class="mdl-layout-title">
-        <a href="##"><img src="../images/user_por.png" class="user-img" />  <span class="nex-user">真是这样</span></a>
-        <div class="nex-drawer-icon">
-          <a href="##" id="email"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">email</i></span></a>
-          <div class="mdl-tooltip" for="email">
-            消息
-          </div>
-          <a href="##" id="fa"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">face</i></span></a>
-          <div class="mdl-tooltip" for="fa">
-            新朋友
-          </div>
-          <a href="##" id="st"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">settings</i></span></a>
-          <div class="mdl-tooltip" for="st">
-            系统消息
-          </div>
-        </div>
-      </div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="list.html"><i class="material-icons">home</i> 首页</a>
-        <a class="mdl-navigation__link" href="forum.html"><i class="material-icons">forum</i> 论坛</a>
-        <a class="mdl-navigation__link" href="forum.html"><i class="tb"> </i> 淘宝</a>
-        <a class="mdl-navigation__link" href="zone1.html">个人中心[用于[测试]</a>
-        <div class="nex-drawer-separator"></div>
-      </nav>
-    </div> -->
-
-    <div class="mdl-layout__content">
-      <div class="artical-subnav main-full mdl-layout--small-screen-only">        
-
-          <a href="forum.html">
-            <button class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
-              <i class="material-icons">arrow_back</i>
-            </button>
-          </a>
-          <span class="block-name" > Pixel 手机</span>
-
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div style="background:#00bcd4;" class="nex-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="artical-subnav main-full mdl-layout--small-screen-only">  
+        <a href="forum.html">
+          <button class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+            <i style="color:#fff;" class="material-icons">arrow_back</i>
+          </button>
+        </a>
+        <p id="fixed-title">
+          在使用了几个月的 funso加速器 以后，小编认真的给大家推荐这款应用：funso加速器
+        </p>
         <button style="float:right;"  class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect forum-header-icon " id="more-button">
-          <i class="material-icons">more_vert</i>
+          <i style="color:#fff;" class="material-icons">more_vert</i>
         </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">
+            <li style="float:none;font-size:14px;color:#000;" class="atc-cmt-icon-rpl mdl-menu__item">
               <i class="material-icons">reply</i>
               回复
             </li>
@@ -197,16 +147,44 @@
             </li>
           </ul>
       </div>
+    </div>
+
+    <div id="top" class="mdl-layout__content">
+<!--       <div class="artical-subnav main-full mdl-layout--small-screen-only">        
+
+        <a href="forum.html">
+          <button class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+            <i class="material-icons">arrow_back</i>
+          </button>
+        </a>
+        <button style="float:right;"  class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect forum-header-icon " id="more-button">
+          <i class="material-icons">more_vert</i>
+        </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li style="float:none;font-size:14px;color:#000;" class="atc-cmt-icon-rpl mdl-menu__item">
+              <i class="material-icons">reply</i>
+              回复
+            </li>
+            <li class="mdl-menu__item">
+              <i class="material-icons">star_border</i>
+              收藏
+            </li>
+            <li class="mdl-menu__item">
+              <i class="material-icons">share</i>
+              分享
+            </li>
+          </ul>
+      </div> -->
           
-      <div class="main-full" style="background:#00bcd4; padding-top:40px;">
+      <div class="main-full" style="background:#00bcd4;">
         <div class="main mdl-grid">
           <header class="artical-header mdl-cell mdl-cell--12-col">
           <div class="artical-title">在使用了几个月的 funso加速器 以后，小编认真的给大家推荐这款应用：funso加速器</div>
-          <div class="artical-info">
-            <p class="author"><img src="../images/my_por.jpg" alt=""> newX</a></p>
+<!--           <div style="display:none;" class="artical-info">
+            <p class="author"><img src="../images/my_por.jpg" alt=""> <a href="#">newX</a></p>
             <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p>
             <time class="tm"><i class="material-icons">schedule</i> 2016/11/11</time>
-          </div>
+          </div> -->
           <div class="float-clr"></div>
         </header>
         </div>
@@ -214,8 +192,15 @@
       <div class="main mdl-grid">
         <div class="mdl-cell mdl-cell--9-col">   
           <section class="article-main content mdl-shadow--2dp">
-            <artical>      
-              <div class="text">
+            <artical>   
+          <div class="article-text-head">
+            <img src="../images/my_por.jpg" alt="">&emsp;<a href="#">newX</a>
+            <!-- <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p> -->
+            <strong>&nbsp;·&nbsp;</strong>1分钟前
+            <a style="float:right;" href="#atc-cmt-box"> 查看评论 </a>
+            <div class="float-clr"></div>
+          </div>   
+              <div class="article-text">
                 <p>
                 <div><font face="微软雅黑">20160824更新：</font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑">在安卓7.0里如何消除感叹号呢？首先开启usb调试，然后用数据线连接电脑和手机。</font></div><div><font face="微软雅黑">在电脑开始菜单-运行 输入cmd，打开命令提示符</font></div><div><font face="微软雅黑">依次输入下面语句</font></div><div><font face="微软雅黑"><div>adb shell settings delete global captive_portal_server &nbsp;</div><div>adb shell settings put global captive_portal_detection_enabled 0</div><div><br></div><div>重启解决！</div></font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑">20150223更新：</font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑"><div>谷歌原生安卓系统当连接到移动数据网络或者WIFI网络的时候，其NetworkMonitor模块会向特定的服务器发起一个http的请求并利用收到的响应进行网络状态判断。由于谷歌的服务器被天朝屏蔽，所以导致没有返回值，这个时候谷歌安卓系统就会在信号或者wifi上打一个感叹号。</div><div><br></div><div><font color="#f00000">以下办法对安卓6.x/5.x有效果，对安卓7.0无效</font></div><div>解决的办法比较简单，修改接收请求的服务器地址：</div><div>首先搞定您pc的adb环境，然后连接您的手机和电脑，在命令提示符用下面命令来修改将服务器地址修改成http://www.g.cn</div></font><font face="微软雅黑"><div><br></div><div>adb shell settings put global captive_portal_server www.g.cn</div><div><br></div><div>然后重启见效！</div><div><br></div><div>如果您想恢复的话，使用下面的语句：</div><div><br></div><div><div>adb shell settings delete global captive_portal_server &nbsp;</div><div>adb shell settings put global captive_portal_detection_enabled 1 &nbsp;</div></div><div><font color="#f00000">#################以下为之前的内容可供参考：###########################</font></div><div><br></div></font></div><div><font face="微软雅黑"><br></font></div><font style="color:rgb(51, 51, 51)"><font face="Arial,"><font style="color:rgb(0, 0, 0)"><font face="微软雅黑"><img width="100%;" id="_aimg_6246" aid="6246"
                 zoomfile="data/attachment/forum/201412/27/105136slbp0br1fmm4jr8d.jpg"
@@ -257,7 +242,7 @@
 <a href="#ta-bx" id="sct"></a>
 
           <section style="padding-top:0;" class="content mdl-shadow--2dp">
-            <div class="atc-cmt-box">
+            <div id="atc-cmt-box" class="atc-cmt-box">
               <div class="atc-cmt-box-header">
                 8回复 | 最后发表于2016-11-29 22:19:38 +08:00
               </div>
@@ -379,7 +364,7 @@
                   </div>
                 </div>
               </div>
-              <div class="atc-cmt-box-footer">
+              <div class=" mdl-layout--large-screen-only atc-cmt-box-footer">
                 <div id="ta-bx" class="cmt-textarea-box">
                   <a style="align-self:center;width:36px;height:36px;"  class="atc-cmt-por" href="#"><img style="margin-top:2px" src="../images/user2.jpeg" alt=""></a>
                   <textarea id="cmt-ta"  name="contents" class="rpl-textarea" placeholder="我的评论："></textarea>
@@ -401,7 +386,7 @@
         </div>
 
         <div style="margin-top: 30px;" class="side-pannel mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-          <div class="userInfo mdl-shadow--2dp">
+          <div class="userInfo mdl-layout--large-screen-only mdl-shadow--2dp">
             <div class="artical-hot-header">
               作者
             </div>
@@ -620,26 +605,6 @@
 
   if($(window).width()<420){
 
-    $("#cmt-ta").focus(function(){
-      $("#sct").click();
-      document.getElementById("sct").click();
-      this.focus();
-      $(".artical-subnav").css("position","absolute");
-     })
-
-  //   var unResize = false;
-  //   $(window).resize(function() {
-
-  //     if(!unResize){
-  //       $(".cmt-textarea-box").css("margin-top","70px");
-  //       unResize = true;
-  //     }else{
-  //       $(".cmt-textarea-box").css("margin-top","0");
-  //       unResize = false;
-  //     }
-  // });
-
-
     $(".fixed-btn-box").css("display","bolck");
     $(".article-main").css("margin-top","0");
     $(".mdl-cell").css("width","100% ");
@@ -662,31 +627,24 @@
   });
   $(".atc-cmt-icon-rpl").click(function(){
     $(".rpl-dlg-box").css("display","block");
+    $(".rpl-textarea-dlg").focus();
   });
 
+// alert($('.artical-header').height())
+  // if($(".mdl-layout__content").scrollTop()>$('.artical-header').outerHeight()  ) alert($('.artical-header').outerHeight())
+// alert($(".mdl-layout__content").scrollTop() +$('.artical-header').outerHeight() )
 
- /* if($(window).width()<420){ //512 237
-    $("#cmt-ta").focus(function(){
-      // this.value = "？";
-      // this.value = "";
-      windowHeight = document.documentElement.clientHeight;
-    // document.body.style.height = windowHeight + 'px';
-      this.value += windowHeight;
 
-    })
-//     if (isAndroid) {
-//       alert("!")
-//     // var windowHeight = document.documentElement.clientHeight;
-//     // document.body.style.height = windowHeight + 'px';
-// }
-  }
-
-  $(window).resize(function() {
-     windowHeight = document.documentElement.clientHeight;
-     alert(document.documentElement.clientHeight)
+  $('.mdl-layout__content').on('scroll', function () {
+    if($(".mdl-layout__content").scrollTop()>$('.artical-header').outerHeight()){
+        $("#fixed-title").css("opacity","1");
+    }else{
+      $("#fixed-title").css("opacity","0");
+    }
   });
-*/
-
+  $("#fixed-btn-toTop").click(function(){
+    $(".mdl-layout__content").animate({scrollTop: 0}, 100);
+  })
 </script>
   
 </body>

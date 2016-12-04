@@ -9,6 +9,7 @@
 }
 	.artical-header{
 		padding: 15px;
+		padding-top: 0;
 		font-size: 12px;
 		line-height: 12px;
 		background: #00bcd4;
@@ -27,7 +28,27 @@
 			color: #fff;
 			vertical-align: middle;
   	}
-			.tm, .categories, .author {
+  	.article-text-head {
+  		padding-bottom: 8px;
+  		font-size: 10px;
+  		color: #999;
+  		line-height: 32px;
+  		border-bottom: 1px solid #eee;
+  	}
+  	.article-text-head img{
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				overflow: hidden;
+  	}
+  	.article-text-head a {
+  		color: #2ea5de;
+  	}
+		.article-text {
+			font-size: 16px;
+			line-height: 160%;
+		}
+  		.tm, .categories, .author {
 				display: inline;
 				line-height: 23px;
 			}

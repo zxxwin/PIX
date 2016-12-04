@@ -55,7 +55,7 @@ body{
     }
     .atc-cmt-main a {
       color: #666;
-      font-size: 13px;
+      font-size: 10px;
       text-decoration: none;
       font-weight: 700;
     }
@@ -64,18 +64,18 @@ body{
     }
     .atc-cmt-main span {
       color: #999;
-      font-size: 12px;
+      font-size: 10px;
     }
     .atc-cmt-header {
       position: relative;
-      line-height: 30px;
+      line-height: 25px;
       font-size: 10px;
     }
     .atc-cmt-icon-prs {
       float:right;
       margin-right:10px;
       color:#aaa;
-      font-size:16px;
+      font-size:14px;
       margin-top:3px;
     }
     .atc-cmt-icon-rpl {
@@ -86,7 +86,7 @@ body{
     }
     .atc-cmt-text {
       line-height: 150%;
-      font-size: 16px;
+      font-size: 14px;
       font-family: "Microsoft Yahei";
       color: #000;
     }
