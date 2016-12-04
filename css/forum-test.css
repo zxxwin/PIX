@@ -92,7 +92,8 @@
   z-index: 2;
 }
 .forum-header-icon {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  align-self:center;
   line-height: 40px;
 }
 .forum-header-icon i {
