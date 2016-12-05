@@ -57,13 +57,34 @@
 			vertical-align: middle;
 			font-size: 14px;
 		}
+		.share-box {
+			float: right;
+			display: inline-block;
+		}
+		.share-box div {
+			display: inline-block;
+		}
+			.share-wx, .share-qq, .share-blog {
+				width: 32px;
+				height: 32px;
+				background: url(../images/share.png);
+				background-position: -32px 0;
+				background-size: 64px;
+				margin: auto 2px;
+			}
+			.share-qq {
+				background-position: -32px -33px;
+			}
+			.share-blog {
+				background-position: -32px -99px;
+			}
   	.article-info{
 			display: inline;
 			color: #fff;
 			vertical-align: middle;
   	}
   	.article-text-head {
-  		padding-bottom: 8px;
+  		/*padding-bottom: 8px;*/
   		font-size: 10px;
   		color: #999;
   		line-height: 32px;
