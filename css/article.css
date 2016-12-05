@@ -68,7 +68,7 @@
 				width: 32px;
 				height: 32px;
 				background: url(../images/share.png);
-				background-position: -32px 0;
+				background-position: -32px -1px;
 				background-size: 64px;
 				margin: auto 2px;
 			}
