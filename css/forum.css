@@ -3,7 +3,7 @@ a {
   color: #666;
 }
 .main {
-  max-width: 1060px;
+  max-width: 1200px;
 }
 .hide {
   display: none;
@@ -157,7 +157,7 @@ a {
   .user-portrait, .user-portrait-sm {
     display: inline-block;
     margin-right: 10px;
-    border-radius: 8px;
+    border-radius: 50%;
     overflow: hidden;
     vertical-align: middle;
   }
@@ -170,7 +170,7 @@ a {
     height: 36px;
 
    }
-  .artical-box {
+  .article-box {
     display: inline-block;
     height: 48px;
     font-size: 12px;
@@ -324,27 +324,27 @@ a {
       color: #757575;
     }
 .ad {
-  margin-top: 10px;
+  margin-top: 16px;
   padding: 10px;
   /*border-radius: 5px;*/
   background: #ffffff;
 }
-.artical-hot, .artical-new, .status{
+.article-hot, .article-new, .status{
   margin-top: 10px;
   padding: 10px;
   /*border-radius: 5px;*/
   background: #ffffff;  
 }
-  .artical-hot-header, .artical-new-header, .status-header {
+  .article-hot-header, .article-new-header, .status-header {
     padding: 2px;
     color: #999999;
     border-bottom: 1px solid #ccc;
   }
-  .artical-hot-item, .artical-new-item{
+  .article-hot-item, .article-new-item{
     padding: 5px;
     border-bottom: 1px dashed #ccc;
   }
-  .artical-hot-item a, .artical-new-item a{
+  .article-hot-item a, .article-new-item a{
     display: block;
     height: 36px;
     font-size: 14px;
@@ -353,7 +353,7 @@ a {
     overflow: hidden;
     color: #666;
   }
-  .artical-hot-item a:hover, .artical-new-item a:hover, .status a:hover {    
+  .article-hot-item a:hover, .article-new-item a:hover, .status a:hover {    
     text-decoration: underline;
   }
   .status span {

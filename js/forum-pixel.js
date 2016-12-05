@@ -15,6 +15,14 @@ $(function(){
       $(".forum-info-pic ").css("height","128px");
     }
   }
+
+  $('.mdl-layout__content').on('scroll', function () {
+    if($(".mdl-layout__content").scrollTop()>115){
+        $("#fixed-title").css("opacity","1");
+    }else{
+      $("#fixed-title").css("opacity","0");
+    }
+  });
   
   $('.mdl-layout__content').on('scroll', function () {
     if($(".mdl-layout__content").scrollTop()>80){

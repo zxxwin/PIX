@@ -18,47 +18,9 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/forum.css">
   <link rel="stylesheet" href="../css/forum-test.css">
-  <link rel="stylesheet" href="../css/artical.css">
+  <link rel="stylesheet" href="../css/article.css">
   <link rel="stylesheet" href="../css/atc-cmt.css">
   <style>
-    .artical-subnav {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 3px;
-      /*top: 0;*/
-      width: 100%;
-      height: 50px;
-      /*background: rgba(0,188,212,0.91);*/
-      z-index: 99;
-    }
-    .artical-subnav p {
-      align-self: center;
-      opacity: 0;
-      margin-bottom: 0;
-      padding: auto 15px;
-      font-size: 18px;
-      font-family: "Microsoft Yahei";
-      line-height: 50px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      transition:opacity .3s;
-    }
-    .artical-subnav a {
-     /* padding: 5px;
-      line-height: 40px;
-      color: #fff;*/
-    }
-    .artical-subnav i {
-      font-size: 26px;
-      color: #fff;
-    }
-    .mdl-menu__item i {
-      margin-top: -4px;
-      font-size: 20px;
-      color: #aaa;
-      vertical-align: middle;
-    }
   </style>
 </head>
 <body>
@@ -119,11 +81,99 @@
   </div>
 </div>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <div style="background:#00bcd4;" class="nex-header mdl-layout__header mdl-layout__header--waterfall">
-      <div class="artical-subnav main-full mdl-layout--small-screen-only">  
-        <!-- <a href="forum.html">
-        </a> -->
-        <a href="forum.html" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+      <div style="background:#00bcd4;" class="nex-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+          <span class="nex-title mdl-layout-title">Pixel中文网</span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="nex-header-spacer mdl-layout-spacer"></div>
+          <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="nex-navigation-container">
+            <nav class="nex-navigation mdl-navigation">
+              <a class="mdl-navigation__link"  href="index.html">首页</a>
+              <a class="mdl-navigation__link" href="forum.html">论坛</a>
+              <a class="mdl-navigation__link" href="##">淘宝</a>
+            </nav>
+          </div>
+          <span class="nex-mobile-title mdl-layout-title">
+            Nexus中文网
+          </span>
+          <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
+            <i class="material-icons">account_circle</i>
+          </button>
+          <div class="mdl-tooltip" data-mdl-for="login">
+            登录
+          </div>
+          <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
+            <i class="material-icons">assignment</i>
+          </button>
+          <div class="mdl-tooltip" data-mdl-for="register">
+            注册
+          </div>
+        </div>
+        <div class="article-subnav main-full mdl-layout--small-screen-only">  
+          <a href="forum.html" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+            <i style="color:#fff;" class="material-icons">arrow_back</i>
+          </a>
+          <p id="fixed-title">
+            在使用了几个月的 funso加速器 以后，小编认真的给大家推荐这款应用：funso加速器
+          </p>
+          <button style="float:right;"  class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect forum-header-icon " id="more-button">
+            <i style="color:#fff;" class="material-icons">more_vert</i>
+          </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+              <li style="float:none;font-size:14px;color:#000;" class="atc-cmt-icon-rpl mdl-menu__item">
+                <i class="material-icons">reply</i>
+                回复
+              </li>
+              <li class="mdl-menu__item">
+                <i class="material-icons">star_border</i>
+                收藏
+              </li>
+              <li class="mdl-menu__item">
+                <i class="material-icons">share</i>
+                分享
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="nex-drawer mdl-layout__drawer mdl-layout--large-screen-only">
+        <div class="mdl-layout-title">
+          <a href="##"><img src="../images/user_por.png" class="user-img" />  <span class="nex-user">真是这样</span></a>
+          <div class="nex-drawer-icon">
+            <a href="##" id="email"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">email</i></span></a>
+            <div class="mdl-tooltip" for="email">
+              消息
+            </div>
+            <a href="##" id="fa"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">face</i></span><!-- <span class="mdl-badge" data-badge="4">新听众</span> --></a>
+            <div class="mdl-tooltip" for="fa">
+              新朋友
+            </div>
+            <a href="##" id="st"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">settings</i></span></a>
+            <div class="mdl-tooltip" for="st">
+              系统消息
+            </div>
+          </div>
+        </div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> 首页</a>
+          <a class="mdl-navigation__link" href="forum.html"><i class="material-icons">forum</i> 论坛</a>
+          <a class="mdl-navigation__link" href="forum.html"><i class="tb"> </i> 淘宝</a>
+          <div class="nex-drawer-separator"></div>
+        </nav>
+      </div>
+
+    <!-- <div style="background:#00bcd4;" class="nex-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="article-subnav main-full mdl-layout--small-screen-only">  <a href="forum.html" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
           <i style="color:#fff;" class="material-icons">arrow_back</i>
         </a>
         <p id="fixed-title">
@@ -147,10 +197,10 @@
             </li>
           </ul>
       </div>
-    </div>
+    </div> -->
 
     <div id="top" class="mdl-layout__content">
-<!--       <div class="artical-subnav main-full mdl-layout--small-screen-only">        
+<!--       <div class="article-subnav main-full mdl-layout--small-screen-only">        
 
         <a href="forum.html">
           <button class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
@@ -178,9 +228,9 @@
           
       <div class="main-full" style="background:#00bcd4;">
         <div class="main mdl-grid">
-          <header class="artical-header mdl-cell mdl-cell--12-col">
-          <div class="artical-title">在使用了几个月的 funso加速器 以后，小编认真的给大家推荐这款应用：funso加速器</div>
-<!--           <div style="display:none;" class="artical-info">
+          <header class="article-header mdl-cell mdl-cell--12-col">
+          <div class="article-title">在使用了几个月的 funso加速器 以后，小编认真的给大家推荐这款应用：funso加速器</div>
+<!--           <div style="display:none;" class="article-info">
             <p class="author"><img src="../images/my_por.jpg" alt=""> <a href="#">newX</a></p>
             <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p>
             <time class="tm"><i class="material-icons">schedule</i> 2016/11/11</time>
@@ -192,7 +242,7 @@
       <div class="main mdl-grid">
         <div class="mdl-cell mdl-cell--9-col">   
           <section class="article-main content mdl-shadow--2dp">
-            <artical>   
+            <article>   
           <div class="article-text-head">
             <img src="../images/my_por.jpg" alt="">&emsp;<a href="#">newX</a>
             <!-- <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p> -->
@@ -232,14 +282,15 @@
                 <strong>...</strong>
                 <!-- <i class="material-icons">local_offer</i>标签：<a href="#" class="tag"> 玩机 </a><a href="#" class="tag"> 基础入门 </a> -->
               </div>
-              <div class="artical-buttons">                  
-                <a href="#"><i class="atc-cmt-icon-rpl material-icons">reply</i></a>              
+              <div class="article-buttons">                     
+                <a href="#"><i style="margin-top: 0;font-size: 22px;" class="atc-cmt-icon-rpl material-icons">reply</i></a>                          
+                <a href="#"><i class="material-icons">star_border</i></a>                           
+                <a href="#"><i style="font-size: 16px;margin-top: 1px;" class="material-icons">share</i></a>                    
                 <!-- <a href="#"><i class="atc-cmt-icon-rpl material-icons">star_border</i></a>    --> 
               </div>
               <div class="float-clr"></div>
-            </artical>
+            </article>
           </section> 
-<a href="#ta-bx" id="sct"></a>
 
           <section style="padding-top:0;" class="content mdl-shadow--2dp">
             <div id="atc-cmt-box" class="atc-cmt-box">
@@ -385,9 +436,9 @@
           </section>
         </div>
 
-        <div style="margin-top: 30px;" class="side-pannel mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <div style="margin-top: 28px;" class="side-pannel mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
           <div class="userInfo mdl-layout--large-screen-only mdl-shadow--2dp">
-            <div class="artical-hot-header">
+            <div class="article-hot-header">
               作者
             </div>
             <div style="margin-top:10px;" class="user-portrait">
@@ -405,11 +456,11 @@
             广告
           </div>
 
-          <div class="artical-new mdl-shadow--2dp">
-            <div class="artical-new-header">
+          <div class="article-related mdl-shadow--2dp">
+            <div class="article-related-header">
               相关主题
             </div>
-            <div class="artical-new-item">              
+            <div class="article-related-item">              
               <table>
                 <tr>
                   <td>
@@ -423,7 +474,7 @@
                 </tr>
               </table>
             </div>
-            <div class="artical-new-item">              
+            <div class="article-new-item">              
               <table>
                 <tr>
                   <td>
@@ -437,7 +488,7 @@
                 </tr>
               </table>
             </div>
-            <div class="artical-new-item">              
+            <div class="article-new-item">              
               <table>
                 <tr>
                   <td>
@@ -451,7 +502,7 @@
                 </tr>
               </table>
             </div>
-            <div class="artical-new-item">              
+            <div class="article-new-item">              
               <table>
                 <tr>
                   <td>
@@ -465,7 +516,7 @@
                 </tr>
               </table>
             </div>
-            <div class="artical-new-item">              
+            <div class="article-new-item">              
               <table>
                 <tr>
                   <td>
@@ -611,7 +662,7 @@
     $(".mdl-cell").css("margin","0");
     $(".side-pannel").css("width","100%");
     $(".side-pannel").css("margin","0");
-    $(".artical-title").css("padding-bottom","5px")
+    $(".article-title").css("padding-bottom","5px")
   }else{
     $(".fixed-btn-box").css("display","none");
   }
@@ -630,13 +681,13 @@
     $(".rpl-textarea-dlg").focus();
   });
 
-// alert($('.artical-header').height())
-  // if($(".mdl-layout__content").scrollTop()>$('.artical-header').outerHeight()  ) alert($('.artical-header').outerHeight())
-// alert($(".mdl-layout__content").scrollTop() +$('.artical-header').outerHeight() )
+// alert($('.article-header').height())
+  // if($(".mdl-layout__content").scrollTop()>$('.article-header').outerHeight()  ) alert($('.article-header').outerHeight())
+// alert($(".mdl-layout__content").scrollTop() +$('.article-header').outerHeight() )
 
 
   $('.mdl-layout__content').on('scroll', function () {
-    if($(".mdl-layout__content").scrollTop()>$('.artical-header').outerHeight()){
+    if($(".mdl-layout__content").scrollTop()>$('.article-header').outerHeight()){
         $("#fixed-title").css("opacity","1");
     }else{
       $("#fixed-title").css("opacity","0");
