@@ -243,19 +243,19 @@
         <div class="mdl-cell mdl-cell--9-col">   
           <section class="article-main content mdl-shadow--2dp">
             <article>   
-          <div class="article-text-head">
-            <img src="../images/my_por.jpg" alt="">&emsp;<a href="#">newX</a>
-            <!-- <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p> -->
-            <strong>&nbsp;·&nbsp;</strong>1分钟前  
-            <strong>&nbsp;</strong>
-            <a style="" href="#atc-cmt-box"> 查看评论 </a>
-            <div class="share-box">
-              <div class="share-wx"></div>
-              <div class="share-qq"></div>
-              <div class="share-blog"></div>
-            </div>
-            <div class="float-clr"></div>
-          </div>   
+              <div class="article-text-head">
+                <img src="../images/my_por.jpg" alt="">&emsp;<a href="#">newX</a>
+                <!-- <p class="categories"><i class="material-icons">turned_in_not</i> <a href="#">Pixel 手机</a></p> -->
+                <strong>&nbsp;·&nbsp;</strong>1分钟前  
+                <strong>&nbsp;</strong>
+                <a  style="float:right" href="#atc-cmt-box"> 查看评论 </a>
+                <!-- <div class="share-box">
+                  <div class="share-wx"></div>
+                  <div class="share-qq"></div>
+                  <div class="share-blog"></div>
+                </div> -->
+                <div class="float-clr"></div>
+              </div>   
               <div class="article-text">
                 <p>
                 <div><font face="微软雅黑">20160824更新：</font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑">在安卓7.0里如何消除感叹号呢？首先开启usb调试，然后用数据线连接电脑和手机。</font></div><div><font face="微软雅黑">在电脑开始菜单-运行 输入cmd，打开命令提示符</font></div><div><font face="微软雅黑">依次输入下面语句</font></div><div><font face="微软雅黑"><div>adb shell settings delete global captive_portal_server &nbsp;</div><div>adb shell settings put global captive_portal_detection_enabled 0</div><div><br></div><div>重启解决！</div></font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑">20150223更新：</font></div><div><font face="微软雅黑"><br></font></div><div><font face="微软雅黑"><div>谷歌原生安卓系统当连接到移动数据网络或者WIFI网络的时候，其NetworkMonitor模块会向特定的服务器发起一个http的请求并利用收到的响应进行网络状态判断。由于谷歌的服务器被天朝屏蔽，所以导致没有返回值，这个时候谷歌安卓系统就会在信号或者wifi上打一个感叹号。</div><div><br></div><div><font color="#f00000">以下办法对安卓6.x/5.x有效果，对安卓7.0无效</font></div><div>解决的办法比较简单，修改接收请求的服务器地址：</div><div>首先搞定您pc的adb环境，然后连接您的手机和电脑，在命令提示符用下面命令来修改将服务器地址修改成http://www.g.cn</div></font><font face="微软雅黑"><div><br></div><div>adb shell settings put global captive_portal_server www.g.cn</div><div><br></div><div>然后重启见效！</div><div><br></div><div>如果您想恢复的话，使用下面的语句：</div><div><br></div><div><div>adb shell settings delete global captive_portal_server &nbsp;</div><div>adb shell settings put global captive_portal_detection_enabled 1 &nbsp;</div></div><div><font color="#f00000">#################以下为之前的内容可供参考：###########################</font></div><div><br></div></font></div><div><font face="微软雅黑"><br></font></div><font style="color:rgb(51, 51, 51)"><font face="Arial,"><font style="color:rgb(0, 0, 0)"><font face="微软雅黑"><img width="100%;" id="_aimg_6246" aid="6246"
@@ -280,21 +280,33 @@
                 </font></font><br>
                 </p>
               </div>
-              <div class="tags">
-                <a href="#"><i class=" material-icons">thumb_up</i></a>
-                <a href="#">假装有一个用户名</a>、
-                <a href="#">newX</a>、
-                <a href="#">zxxwin</a>
-                <strong>...</strong>
-                <!-- <i class="material-icons">local_offer</i>标签：<a href="#" class="tag"> 玩机 </a><a href="#" class="tag"> 基础入门 </a> -->
+              <div class="article-footer">
+                <div class="tags">
+                  <a href="#"><i class=" material-icons">thumb_up</i></a>
+                  <a href="#">假装有一个用户名</a>、
+                  <a href="#">newX</a>、
+                  <a href="#">zxxwin</a>
+                  <strong>...</strong>
+                  <!-- <i class="material-icons">local_offer</i>标签：<a href="#" class="tag"> 玩机 </a><a href="#" class="tag"> 基础入门 </a> -->
+                </div>
+                <div class="share-box">
+                  <span>分享到：</span>
+                  <div class="share-wx"></div>
+                  <div class="share-qq"></div>
+                  <div class="share-blog"></div>
+                </div>
+                <div class="article-buttons"> 
+                  <a href="#"><i class="material-icons">star_border</i></a>                           
+                  <a href="#"><i style="font-size:20px;" class="material-icons">thumb_up</i></a>                            
+                  <a href="#"><i style="font-size:26px;" class="material-icons">reply</i></a>                    
+                  <!-- <a style="float:none;" href="#"><i style="
+    font-size: 24px;
+    color: #999;
+    vertical-align: middle;" class="atc-cmt-icon-rpl material-icons">reply</i></a>  -->                                            
+                  <!-- <a href="#"><i class="atc-cmt-icon-rpl material-icons">star_border</i></a>    --> 
+                </div>
+                <div class="float-clr"></div>
               </div>
-              <div class="article-buttons">                     
-                <a href="#"><i style="margin-top: 0;font-size: 22px;" class="atc-cmt-icon-rpl material-icons">reply</i></a>                          
-                <a href="#"><i class="material-icons">star_border</i></a>                           
-                <a href="#"><i style="font-size: 16px;margin-top: 1px;" class="material-icons">share</i></a>                    
-                <!-- <a href="#"><i class="atc-cmt-icon-rpl material-icons">star_border</i></a>    --> 
-              </div>
-              <div class="float-clr"></div>
             </article>
           </section> 
 

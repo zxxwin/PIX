@@ -57,12 +57,21 @@
 			vertical-align: middle;
 			font-size: 14px;
 		}
+		.article-footer {
+			padding-top: 10px;
+		}
 		.share-box {
-			float: right;
 			display: inline-block;
+			float: left;
+			line-height: 32px;
+		}
+		.share-box span {
+			color: #999;
+			vertical-align: middle;
 		}
 		.share-box div {
 			display: inline-block;
+			vertical-align: middle;
 		}
 			.share-wx, .share-qq, .share-blog {
 				width: 32px;
@@ -84,7 +93,7 @@
 			vertical-align: middle;
   	}
   	.article-text-head {
-  		/*padding-bottom: 8px;*/
+  		padding-bottom: 8px;
   		font-size: 10px;
   		color: #999;
   		line-height: 32px;
@@ -126,6 +135,7 @@
 			color: #fff;
 		}
 			.tags {
+				display: none;
 				float: left;
 				color: #999;
 				font-size: 12px;
@@ -141,15 +151,18 @@
 			}
 
 			.article-buttons {
+				display: inline-block;
 				float: right;
+				vertical-align: middle;
 			}
 			.article-buttons a {
-				font-size: 14px;
+				font-size: 26px;
+				line-height: 32px;
 			}
 			.article-buttons i {
 				margin-left: 5px;
 				/*margin-top: -4px;*/
-				font-size: 20px;
+				font-size: 24px;
 				color: #999;
 				vertical-align: middle;
 			}

@@ -1,0 +1,312 @@
+/*全局样式*/
+
+/*基础样式*/
+body {
+  	margin: 0;
+  	background: #FAFAFA;
+}
+::selection {
+  	background-color: rgb(0,150,136);
+  	color: #fff;
+}
+a {
+  	text-decoration: none;
+}
+a img{
+  	border: 0px;
+}
+/*头部样式*/
+.nex-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+.nex-header {
+  	overflow: visible;
+  	background-color: #4DB6AC;
+}
+.nex-header .mdl-layout__drawer-button {
+ 	background: transparent;
+  	color: #767777;
+}
+
+.nex-header .mdl-navigation__link {
+  	color: #fff;
+  	font-weight: 500;
+  	font-size: 14px;
+}
+.nex-title {
+  	color: #fff;
+  	font-family: "微软雅黑";
+  	font-weight: 500;
+}
+.nex-header .material-icons {
+  	color: #fff;
+  	margin-top: 1px;
+}
+	/*头部搜索框*/
+.nex-search-box.is-focused + .nex-navigation-container {
+  	opacity: 0;
+}
+.nex-search-box {
+  	-webkit-order: 2;
+      	-ms-flex-order: 2;
+          	order: 2;
+  	margin-left: 16px;
+  	margin-right: 16px;
+  	margin: 0;
+}
+.nex-search-box .mdl-textfield__input {
+  	color: rgba(0, 0, 0, 0.87);
+}
+.mdl-textfield--expandable {
+	padding-right: 5px;
+    padding-left: 10px;
+	width: auto;
+}
+.nex-mobile-title {
+  	display: none ;
+}
+.nex-header-row {
+	padding-right: 80px;
+}
+
+	/*首部导航*/
+.nex-navigation-container {
+  	direction: rtl;
+  	-webkit-order: 1;
+      	-ms-flex-order: 1;
+          	order: 1;
+  	width: 500px;
+  	transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  	width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nex-navigation {
+  	direction: ltr;
+  	-webkit-justify-content: flex-end;
+      	-ms-flex-pack: end;
+          	justify-content: flex-end;
+  	width: 800px;
+}
+.nex-navigation .mdl-navigation__link {
+  	display: inline-block;
+  	padding: 0 16px;
+  	height: 60px;
+  	line-height: 68px;
+  	background-color: transparent !important;
+  	border-bottom: 4px solid transparent;
+  	font-family: "微软雅黑";
+  	font-size: 16px;
+}
+.nex-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid rgb(0,150,136);
+  }
+.nex-navigation .is-visible{
+    right: 0px!important;
+}
+.nex-navigation .mdl-navigation__link {
+  	position:relative;
+}
+.nex-navigation-icon {
+  	margin-top: 3px;	
+}
+.nex-navigation-search {
+  	top:18px!important;
+}
+.nex-more-button {
+	background: #4DB6AC;
+  	color: #fff;
+  	-webkit-order: 3;
+      	-ms-flex-order: 3;
+          	order: 3;
+}
+.nex-more-button:hover {
+	background: rgb(0,150,136);
+}
+/*侧边栏*/
+.nex-drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+.nex-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+
+.nex-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
+
+.nex-drawer .mdl-layout-title {
+  position: relative;
+  padding-top: 40px;
+  background: rgb(0,150,136);
+  height: 160px;
+  color: #fff;
+}
+.nex-drawer .mdl-layout-title a {
+  text-decoration:none; 
+}
+
+/*底部*/
+.nex-footer {
+  	background-color: #424242;
+  	position: relative;
+}
+
+.nex-footer a:hover {
+  	color: rgb(0,150,136);
+}
+
+.nex-footer .mdl-mega-footer--top-section::after {
+  	border-bottom: none;
+}
+
+.nex-footer .mdl-mega-footer--middle-section::after {
+  	border-bottom: none;
+}
+
+.nex-footer .mdl-mega-footer--bottom-section {
+  	position: relative;
+}
+
+.nex-footer .mdl-mega-footer--bottom-section a {
+  	margin-right: 2em;
+}
+
+.nex-footer .mdl-mega-footer--right-section a .material-icons {
+  	position: relative;
+  	top: 6px;
+}
+.nex-link {
+  	text-decoration: none;
+  	font-size: 12px;
+ 	color: rgb(0,150,136) !important;
+}
+
+.nex-link:hover {
+  	color: rgb(255,64,129) !important;
+}
+
+.nex-link .material-icons {
+  	position: relative;
+  	top: -1px;
+  	vertical-align: middle;
+}
+.nex-link-menu:hover {
+  	cursor: pointer;
+}
+
+/*结构部分*/
+.nex-header-section {
+	margin: 0 auto;
+	max-width: 1200px;
+	/*padding:8px 由mdl-grid提供padding*/
+}
+.nex-body {
+	margin: 0 auto;
+	max-width: 1208px;/*所有都是9-3分*/
+}
+/*内容导航*/
+.nex-content-nav {
+	min-height: 60px;
+}
+.nex-content-nav-list {
+  	display: flex;
+  	height: 100%;
+  	justify-content: flex-start;
+  	flex-wrap:wrap;
+  	padding-left:12px; 
+  	font-family: "微软雅黑";
+  	line-height: 44px;
+}
+.nex-content-nav-list .active , .nex-content-nav-list .active:hover{
+  background: rgb(0,150,136);
+  color: #fff!important;
+}
+.nex-content-nav-list .nex-tag {
+  padding: 10px 15px;
+  color: #2C3E50;
+}
+	/*tab标签*/
+.nex-tag {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background: #f5f5f5;
+  font-size: 12px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.nex-tag:hover {
+  background: #e5e5e5;
+}
+	/*渐变色*/
+.nex-default-color {
+  color: #999;
+  -webkit-transition: color 1s;
+}
+.nex-default-color:hover {
+  color: rgb(0,150,136);
+}
+/*内容主体*/
+.nex-content-title {
+	font-size:20px;
+	color:#333;
+}
+.nex-content {
+	font-size: 16px;
+	color: #333;
+	line-height: 160%;
+}
+/*收藏,评论等动作*/
+.nex-content-action {
+	color: #999;
+	font-size: 20px;
+}
+.nex-content-icon {
+	color:#aaa;
+}
+.nex-user-portrait {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+@media (max-width: 900px) {
+	.nex-navigation-container {
+    	display: none;
+  	}
+  	.mdl-layout__header-row {
+    	padding: 0 16px 0 56px;
+  	}
+  	.nex-more-button {
+    	display: none;
+  	}
+
+  	.nex-title {
+    	display: none;
+  	}
+  	.nex-mobile-title {
+	    display: block ;
+	    order:-1;
+	    color: #fff;
+	    font-family: "微软雅黑";
+	}
+	.nex.nex-search-box.is-focused ~ .nex-mobile-title,
+  	.nex-search-box.is-focused + .nex-navigation-container + .nex-mobile-title {
+    	opacity:1;
+  	}
+  	.nex-search-box.is-focused {
+	    width: calc(100%-60px);
+	    order:-3;
+	}
+	.nex-search-box.is-focused+  
+	.nex-search-box .mdl-textfield__expandable-holder {
+	    width: 100%;
+	}
+	.nex-search-box.is-focused + .nex-mobile-title {
+    	opacity: 0;
+    	width: 100px;
+  	}
+
+}
