@@ -18,9 +18,11 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/forum.css">
   <link rel="stylesheet" href="../css/forum-test.css">
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/article.css">
   <link rel="stylesheet" href="../css/atc-cmt.css">
   <style>
+
   </style>
 </head>
 <body>
@@ -86,38 +88,26 @@
           <span class="nex-title mdl-layout-title">Pixel中文网</span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="nex-header-spacer mdl-layout-spacer"></div>
-          <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
+            <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+              <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
+                <i class="material-icons">search</i>
+              </label>
 
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" id="search-field">
+              </div>
             </div>
-          </div>
-          <!-- Navigation -->
-          <div class="nex-navigation-container">
-            <nav class="nex-navigation mdl-navigation">
-              <a class="mdl-navigation__link"  href="index.html">首页</a>
-              <a class="mdl-navigation__link" href="forum.html">论坛</a>
-              <a class="mdl-navigation__link" href="##">淘宝</a>
-            </nav>
-          </div>
-          <span class="nex-mobile-title mdl-layout-title">
-            Nexus中文网
-          </span>
-          <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
-            <i class="material-icons">account_circle</i>
-          </button>
-          <div class="mdl-tooltip" data-mdl-for="login">
-            登录
-          </div>
-          <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
-            <i class="material-icons">assignment</i>
-          </button>
-          <div class="mdl-tooltip" data-mdl-for="register">
-            注册
-          </div>
+            <!-- Navigation -->
+            <div class="nex-navigation-container">
+              <nav class="nex-navigation mdl-navigation">
+                <a class="mdl-navigation__link"  href="index.html">首页</a>
+                <a class="mdl-navigation__link" href="forum.html">论坛</a>
+                <a class="mdl-navigation__link" href="##">淘宝</a>
+              </nav>
+            </div>
+            <button class="nex-more-button mdl-button mdl-js-button mdl-js-ripple-effect  nex-navigation-icon " id="login">
+              登录
+            </button>
         </div>
         <div class="article-subnav main-full mdl-layout--small-screen-only">  
           <a href="forum.html" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
@@ -131,15 +121,15 @@
           </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
               <li style="float:none;font-size:14px;color:#000;" class="atc-cmt-icon-rpl mdl-menu__item">
-                <i class="material-icons">reply</i>
+                <i class="more_vert-icon material-icons">reply</i>
                 回复
               </li>
               <li class="mdl-menu__item">
-                <i class="material-icons">star_border</i>
+                <i class="more_vert-icon material-icons">star_border</i>
                 收藏
               </li>
               <li class="mdl-menu__item">
-                <i class="material-icons">share</i>
+                <i class="more_vert-icon material-icons">share</i>
                 分享
               </li>
             </ul>
@@ -289,21 +279,16 @@
                   <strong>...</strong>
                   <!-- <i class="material-icons">local_offer</i>标签：<a href="#" class="tag"> 玩机 </a><a href="#" class="tag"> 基础入门 </a> -->
                 </div>
+                <div class="article-buttons"> 
+                  <a href="#"><i class="material-icons">star_border</i></a>                           
+                  <a href="#"><i style="font-size:20px;" class="material-icons">thumb_up</i></a>                            
+                  <a href="#"><i style="font-size:26px;" class="material-icons">reply</i></a>
+                </div>
                 <div class="share-box">
                   <span>分享到：</span>
                   <div class="share-wx"></div>
                   <div class="share-qq"></div>
                   <div class="share-blog"></div>
-                </div>
-                <div class="article-buttons"> 
-                  <a href="#"><i class="material-icons">star_border</i></a>                           
-                  <a href="#"><i style="font-size:20px;" class="material-icons">thumb_up</i></a>                            
-                  <a href="#"><i style="font-size:26px;" class="material-icons">reply</i></a>                    
-                  <!-- <a style="float:none;" href="#"><i style="
-    font-size: 24px;
-    color: #999;
-    vertical-align: middle;" class="atc-cmt-icon-rpl material-icons">reply</i></a>  -->                                            
-                  <!-- <a href="#"><i class="atc-cmt-icon-rpl material-icons">star_border</i></a>    --> 
                 </div>
                 <div class="float-clr"></div>
               </div>
@@ -471,10 +456,10 @@
           </div>
 
           <div class="ad mdl-shadow--2dp">
-            广告
+            推广
           </div>
 
-          <div class="article-related mdl-shadow--2dp">
+          <!-- <div class="article-related mdl-shadow--2dp">
             <div class="article-related-header">
               相关主题
             </div>
@@ -548,7 +533,7 @@
                 </tr>
               </table>
             </div>
-          </div>
+          </div> -->
         </div>        
       </div>
       <footer class="nex-footer mdl-mega-footer">

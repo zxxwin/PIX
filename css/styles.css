@@ -1,37 +1,21 @@
-body {
+﻿.nex-hp-0 {
+  padding: 0;
+  margin-left: 0px;
+}
+.nex-hp-1 {
+  padding: 8px 0;
+  margin-left: 0;
+  width: 25%;
+}
+.nex-hp-2 {
+  padding: 0;
   margin: 0;
-  background: #FAFAFA;
+  width: 100%;
 }
-
-/* Disable ugly boxes around images in IE10 */
-a img{
-  border: 0px;
+.nex-hp-3 {
+  margin: 8px 0;
+  width: 100%;
 }
-
-::-moz-selection {
-  background-color: #6ab344;
-  color: #fff;
-}
-
-::selection {
-  background-color: rgb(0,150,136);
-  color: #fff;
-}
-
-.nex-search-box .mdl-textfield__input {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.nex-header .mdl-menu__container {
-  z-index: 50;
-  margin: 0 !important;
-}
-
-
-.mdl-textfield--expandable {
-  width: auto;
-}
-
 .nex-fab {
   position: absolute;
   right: 20%;
@@ -40,180 +24,14 @@ a img{
   background: #64ffda !important;
   color: black !important;
 }
-
-.nex-mobile-title {
-  display: none !important;
-}
-.nex-title {
-  color: rgb(0,150,136);
-  font-family: "微软雅黑";
-  font-weight: 500;
-}
-
-.nex-header {
-  overflow: visible;
-  background-color: white;
-}
-
-.nex-header .material-icons {
-  color: #767777;
-}
-
-.nex-header .mdl-layout__drawer-button {
-  background: transparent;
-  color: #767777;
-}
-
-.nex-header .mdl-navigation__link {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.nex-navigation-container {
-  /* Simple hack to make the overflow happen to the left instead... */
-  direction: rtl;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-  width: 500px;
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nex-navigation {
-  /* ... and now make sure the content is actually LTR */
-  direction: ltr;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 800px;
-}
-
-.nex-search-box.is-focused + .nex-navigation-container {
-  opacity: 0;
-  width: 100px;
-}
-
-
-.nex-navigation .mdl-navigation__link {
-  display: inline-block;
-  padding: 0 16px;
-  height: 60px;
-  line-height: 68px;
-  background-color: transparent !important;
-  border-bottom: 4px solid transparent;
-  font-family: "微软雅黑";
-}
-
-  .nex-navigation .mdl-navigation__link:hover {
-    border-bottom: 4px solid rgb(0,150,136);
-  }
-
-.nex-search-box {
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.nex-more-button {
-  -webkit-order: 3;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
 .nex-drawer {
   border-right: none;
-}
-
-.nex-drawer-separator {
-  height: 1px;
-  background-color: #dcdcdc;
-  margin: 8px 0;
-}
-
-  .nex-drawer .mdl-navigation__link.mdl-navigation__link {
-    font-size: 14px;
-    color: #757575;
-  }
-
-  .nex-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
-  }
-
-.nex-drawer .mdl-layout-title {
-  position: relative;
-  padding-top: 40px;
-  background: rgb(0,150,136);
-  height: 160px;
-  color: #fff;
-}
-.nex-footer {
-  background-color: #424242;
-  position: relative;
-}
-
-.nex-footer a:hover {
-  color: rgb(0,150,136);
-}
-
-.nex-footer .mdl-mega-footer--top-section::after {
-  border-bottom: none;
-}
-
-.nex-footer .mdl-mega-footer--middle-section::after {
-  border-bottom: none;
-}
-
-.nex-footer .mdl-mega-footer--bottom-section {
-  position: relative;
-}
-
-.nex-footer .mdl-mega-footer--bottom-section a {
-  margin-right: 2em;
-}
-
-.nex-footer .mdl-mega-footer--right-section a .material-icons {
-  position: relative;
-  top: 6px;
-}
-.nex-link {
-  text-decoration: none;
-  font-size: 12px;
-  color: rgb(0,150,136) !important;
-}
-
-.nex-link:hover {
-  color: rgb(255,64,129) !important;
-}
-
-.nex-link .material-icons {
-  position: relative;
-  top: -1px;
-  vertical-align: middle;
-}
-.nex-link-menu:hover {
-  cursor: pointer;
 }
 #slide ul {
   display: none;
 }
 #slide li{
   list-style: none;
-}
-.nex-navigation .is-visible{
-    right: 0px!important;
-}
-.nex-navigation .mdl-navigation__link {
-  position:relative;
-}
-.nex-navigation-icon {
-  margin-top: 3px;
-}
-.nex-navigation-search {
-  top:18px!important;
 }
 .float-right {
   float: right;
@@ -224,57 +42,12 @@ a img{
 .v-middle {
   vertical-align: middle;
 }
-.nex-drawer-icon {
-  display: flex;
-  justify-content:flex-start;
-  height: 40px;
-}
-.nex-drawer-icon i {
-  margin-right: 10px;
-  color: #ccc;
-}
-.nex-mdl-badge {
-  margin-right: 10px;
-}
-.nex-mdl-badge:after {
-  top: -10px !important;
-  right: 2px!important;
-  width: 18px!important;
-  height: 18px!important;
-}
 .display-block {
   display: block;
 }
 
 .mdl-mega-footer__drop-down-section {
   width: 17%;
-}
-.nex-user {
-  font-size:14px;
-  color: #fff; 
-}
-.nex-more-section {
-  padding: 80px 0;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nex-more-section .nex-section-title {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 15px;
-  padding-bottom: 12px;
-  flex-wrap:wrap;
-  font-family: "微软雅黑";
-}
-.nex-section-title .active {
-  background: #324455;
-  color: #fff!important;
-}
-.nex-section-title .nex-tag {
-  padding: 10px 15px;
-  color: #2C3E50;
 }
 .nex-icon-style {
   margin-bottom: 1px;
@@ -288,99 +61,46 @@ a img{
   color: #fff;
   font-size: 12px;
 }
-/**标签**/
-.nex-tag {
-  padding: 5px 10px;
-  margin-right: 5px;
-  background: #f5f5f5;
-  font-size: 12px;
-  border-radius: 2px;
-  text-decoration: none;
+
+/**漂浮按钮**/
+.fixed-btn-box {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;      
+  z-index: 5;
 }
-.nex-default-color {
-  color: #999;
-  -webkit-transition: color 1s;
+.fixed-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #00bcd4;
+  transition:bottom .2s; 
 }
-.nex-default-color:hover {
-  color: rgb(0,150,136);
+.fixed-btn:hover {
+  background: #3EDBEF;
 }
-.nex-tag:hover {
-  background: #e5e5e5;
+.fixed-btn i{
+  color: #fff;  
 }
-.tb {
-  display: inline-block;
-  background: url(../images/tb.png) no-repeat;
-  width: 22px;
-  height: 22px;
-  background-size: 100% 100%;
-  vertical-align: middle;
+.fixed-btn-toTop, .fixed-btn-msg, .fixed-btn-create {
+  bottom: 140px;
+  z-index: 6;  
 }
-.mdl-mega-footer__heading {
-  border-left: 2px solid #009688;
-  padding-left: 10px;
+.fixed-btn-msg{
+  bottom: 100px;
+  z-index: 7;      
 }
-.mdl-mega-footer__link-list {
-  padding-left: 12px;
+.fixed-btn-create{
+  bottom: 60px;
+  z-index: 8;
 }
-.mdl-mega-footer__link-list a {
-  font-size: 12px;
-}
-.nex-footer-right {
-  margin-top: 24px;
-  padding-left: 0;
-}
-.nex-footer-right li {
-  list-style: none;
-  font-size: 12px;
-  color: #9e9e9e;
-}
-.nex-ad-link {
-  color: #9e9e9e!important;
-}
-.nex-ad-link:hover {
-  color: rgb(0,150,136)!important;
-}
-.nex-footer-right i {
-  margin-bottom: 1px;
-  font-size: 12px;
-}
-.font-size-min {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-.microblog {
-  background: url(../images/microblog.png) no-repeat;
-  width: 24px;
-  height: 24px;
-}
-.nex-footer-section {
-  margin-left: 10px;
+.fixed-btn-add{
+  z-index: 9;   
+  transform:rotate(45deg);
+  transition:transform .1s;  
 }
 /**** Mobile layout ****/
 @media (max-width: 900px) {
-  .nex-navigation-container {
-    display: none;
-  }
-
-  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
-     consecutive "+" operators in some cases. Therefore, we need to use both
-     here to cover all the bases. */
-  .nex.nex-search-box.is-focused ~ .nex-mobile-title,
-  .nex-search-box.is-focused + .nex-navigation-container + .nex-mobile-title {
-    opacity: 0;
-  }
-
-  .nex-more-button {
-    display: none;
-  }
-
-  .nex-search-box.is-focused {
-    width: calc(100% - 48px);
-  }
-
-  .nex-search-box .mdl-textfield__expandable-holder {
-    width: 100%;
-  }
   .mdl-mega-footer__drop-down-section {
     width: 100%;
   }

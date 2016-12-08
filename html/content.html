@@ -6,24 +6,24 @@
   <meta name="description" content="Nexus中文网-为信仰而充值">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Pixel中文网-我国360团队宣布成功破解谷歌pixel手机安全机制</title>
-  <meta name="viewport" content="width=320.1,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+  <meta name="viewport" content="width=320.1,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes,minimal-ui" />
   <meta name="apple-mobile-web-app-title" content="Pixel中文网-为信仰而充值" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta content="telephone=no" name="format-detection" />
   <meta name="full-screen" content="yes" />
   <meta name="x5-fullscreen" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Page styles -->
   <link rel="stylesheet" href="../css/icon.css">
   <link rel="stylesheet" href="../css/material.min.css">
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/content.css">
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="nex-header mdl-layout__header mdl-layout__header--waterfall">
-      <div class="mdl-layout__header-row">
+      <div class="nex-header-row mdl-layout__header-row">
         <span class="nex-title mdl-layout-title">Pixel中文网</span>
         <!-- Add spacer, to align navigation to the right in desktop -->
         <div class="nex-header-spacer mdl-layout-spacer"></div>
@@ -36,6 +36,9 @@
             <input class="mdl-textfield__input" type="text" id="search-field">
           </div>
         </div>
+        <span class="nex-mobile-title mdl-layout-title">
+          Nexus中文网
+        </span>
         <!-- Navigation -->
         <div class="nex-navigation-container">
           <nav class="nex-navigation mdl-navigation">
@@ -44,221 +47,280 @@
             <a class="mdl-navigation__link" href="##">淘宝</a>
           </nav>
         </div>
-        <span class="nex-mobile-title mdl-layout-title">
-          Nexus中文网
-        </span>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="more-button">
-          <i class="material-icons">more_vert</i>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-          <li class="mdl-menu__item">机情无限</li>
-          <li class="mdl-menu__item">App那些事</li>
-        </ul>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
-          <i class="material-icons">account_circle</i>
-        </button>
-        <div class="mdl-tooltip" data-mdl-for="login">
+        <button class="nex-more-button mdl-button mdl-js-button mdl-js-ripple-effect  nex-navigation-icon " id="login">
           登录
-        </div>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
-          <i class="material-icons">assignment</i>
         </button>
-        <div class="mdl-tooltip" data-mdl-for="register">
-          注册
-        </div>
       </div>
     </div>
 
-    <div class="nex-drawer mdl-layout__drawer">
+    <div class="nex-drawer mdl-layout__drawer ">
       <div class="mdl-layout-title">
-        <a href="##"><img src="../images/user_por.png" class="user-img" />  <span class="nex-user">真是这样</span></a>
-        <div class="nex-drawer-icon">
-          <a href="##" id="email"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">email</i></span></a>
-          <div class="mdl-tooltip" for="email">
-            消息
-          </div>
-          <a href="##" id="fa"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">face</i></span><!-- <span class="mdl-badge" data-badge="4">新听众</span> --></a>
-          <div class="mdl-tooltip" for="fa">
-            新朋友
-          </div>
-          <a href="##" id="st"><span class="mdl-badge nex-mdl-badge" data-badge="4"><i class="btn-noti material-icons">settings</i></span></a>
-          <div class="mdl-tooltip" for="st">
-            系统消息
-          </div>
-        </div>
+        <a href="login.html"><img src="../images/writer.jpg" class="nex-user-portrait user-img" />  <span class="nex-user">亲爱的阿基米德</span></a>
+        <p class="nex-zone-sub-userif"><span><i class="material-icons nex-zone-star">star</i>等级 11 </span><span><i class="material-icons">filter_vintage</i>积分 100</span></p>
       </div>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> 首页</a>
-        <a class="mdl-navigation__link" href="forum.html"><i class="material-icons">forum</i> 论坛</a>
+        <a class="mdl-navigation__link" href="list.html"><i class="material-icons nex-content-icon">home</i> 首页</a>
+        <a class="mdl-navigation__link" href="forum.html"><i class="material-icons nex-content-icon">forum</i> 论坛</a>
         <a class="mdl-navigation__link" href="forum.html"><i class="tb"> </i> 淘宝</a>
         <div class="nex-drawer-separator"></div>
+        <div class="nex-drawer-icon">
+          <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="btn-noti material-icons">notifications</i>
+            <span class="mdl-badge nex-mdl-badge" data-badge="4">消息</span>
+          </button>
+          <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="btn-grade material-icons">grade</i>
+            <span>收藏</span>
+          </button>
+          <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
+            <i class="btn-settings material-icons">settings</i>
+            <span>设置</span>
+          </button>
+        </div>
       </nav>
     </div>
 
-    <div class="nex-content mdl-layout__content">
-      <div class="nex-more-section mdl-grid">
-        <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card nex-content-border">
-          <div class="mdl-card__media nex-content-media">
-            <img src="../images/test1.png" alt="主题图" />
-          </div>
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text nex-content-title">我国360团队宣布成功破解谷歌pixel手机安全机制</h2>
-          </div>
-          <div class="nex-content-time mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
-                <i class="material-icons v-middle nex-icon-style">query_builder</i> <span class="margin-right-25">2016-11-20 11:00:08</span>
+    <div class="mdl-layout__content">
+      <div class="nex-body mdl-grid">
+        <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-grid nex-hp-0">
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__media nex-content-media">
+              <img src="../images/test1.png" alt="主题图" />
             </div>
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
-                <i class="material-icons v-middle nex-icon-style">loyalty</i> <a class="nex-tag nex-default-color" href="##">业界</a><a class="nex-tag nex-default-color" href="##">爱谷歌</a>
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text  nex-content-title">我国360团队宣布成功破解谷歌pixel手机安全机制</h2>
             </div>
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
-              <span>
-                <img src="../images/user_por.png" class="small-page-maker" /><a href="##" class="nex-default-color"> 沈姑娘</a>
-              </span>
+            <div class="mdl-card__title nex-content-time nex-content-mobile-1 nex-content-action">
+              亲爱的阿基米德 | 爱谷歌 | 2016-11-20 11:00:08
             </div>
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
-              <span class="float-right nex-mobile-icon">
-                <a href="" class="margin-right-25 nex-content-icon-con"><i class="material-icons v-middle nex-icon-big nex-content-icon1">textsms</i> 11</a>
-                <a href="" class="nex-content-icon-con"><i class="material-icons v-middle nex-icon-big shine-color">favorite</i> 12</a>
-              </span>
-              
-            </div>
-          </div>
-          <div class="mdl-card__supporting-text nex-surpporting-text">
-            还记得谷歌安卓安全老大说过pixel和iphone在安全上是同一水平吗，不过开源的安全和闭源的ios系统还是有一定的不同，这不，国内的360团队在PWNFEST大会上宣布在谷歌pixel手机上实现远程执行代码，并获得了12万美金的奖励。当然了，pixel手机并不需要太过伤心，因为在同一大会上，包括运行win10的
-            Microsoft Edge也被破解，而且来自中国而且是目前全球越狱界的领军团队盘古也成功的通过Safari的漏洞获得了macOS Sierra的root权限.
-            <br/>
-            目前暂时没有团队找到运行ios 10的iPhone 7 Plus的漏洞 。
-            <br/>
-            大会上所有发现的漏洞都是基于厂家最新的系统版本，且漏洞都将告知给相关厂家以免漏洞被有心人利用。
-          </div>
-          <div class="mdl-card__supporting-text nex-surpporting-text">
-            <div></div>
-            <div class="nex-drawer-separator"></div>
-            <h6><strong>加pixel中文网官方微信公众账号，扫描下图或者搜索"pixel中文网"关注！</strong></h6>
-            <img src="../images/2code.png" alt="二维码" class="two-code" />
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-          <div class="mdl-tabs mdl-js-tabs">
-            <div class="mdl-tabs__tab-bar">
-               <a href="#tab1-panel" class="mdl-tabs__tab is-active">最热</a>
-               <a href="#tab2-panel" class="mdl-tabs__tab">最新</a>
-               <a href="#tab3-panel" class="mdl-tabs__tab">评论</a>
-            </div>
-            <div class="mdl-tabs__panel is-active" id="tab1-panel">
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg" class=""></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">华硕取消ZenFone 3 Deluxe</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
+            <div class="nex-content-time mdl-grid nex-content-action">
+              <div class="mdl-cell mdl-cell--12-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
+                <span>
+                  <a href="##" class="nex-default-color">亲爱的阿基米德</a> • <span>2016-11-20 11:00:08</span>
+                </span>
               </div>
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">华硕取消ZenFone 3 Deluxe</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
+              <!-- <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--12-col-phone">
+                  <i class="material-icons v-middle nex-icon-style">loyalty</i> <a class="nex-tag nex-default-color" href="##">业界</a><a class="nex-tag nex-default-color" href="##">爱谷歌</a>
+              </div> -->
             </div>
-            <div class="mdl-tabs__panel" id="tab2-panel">
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg" class="nex-list-img"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
-              <div class="nex-small-list">
-                <div class="nex-small-list-img nex-ovf">
-                  <a href=""><img src="../images/post-img.jpg" class="nex-list-img"></a>
-                </div>
-                <div class="nex-small-list-title">
-                  <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
-                  <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
-                </div>                   
-              </div>
-            </div>
-            <div class="mdl-tabs__panel" id="tab3-panel">
-              
-            </div>
-          </div>
-        </div>
-        <div class="mdl-cell mdl-cell--8-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp nex-content-writer mdl-grid">
-          <div class="nex-content-writer-title mdl-cell mdl-cell--12-col">
-            关于作者
-          </div>
-            <div class="mdl-cell mdl-cell--2-col">
-              <img src="../images/writer.jpg" class="nex-content-writer-img" />
-            </div>
-            <div class="mdl-cell mdl-cell--10-col">
-              <span class="nex-content-writer-name">亲爱的阿基米德</span>
-              <p>来自某个国家，号称战斗民族，咳咳咳，随便填充吧</p>
-            </div>
-        </div>
-        <div class="mdl-cell mdl-cell--3-col mdl-cell--3-tablet mdl-cell--hidden-phone"></div>
-        <div class="mdl-cell mdl-cell--8-col mdl-card mdl-grid nex-content-comment">
-          <div class="nex-comment-title mdl-cell mdl-cell--12-col">文章评论</div>
-          <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text nex-surpporting-text nex-content">
+              <p>还记得谷歌安卓安全老大说过pixel和iphone在安全上是同一水平吗，不过开源的安全和闭源的ios系统还是有一定的不同，这不，国内的360团队在PWNFEST大会上宣布在谷歌pixel手机上实现远程执行代码，并获得了12万美金的奖励。当然了，pixel手机并不需要太过伤心，因为在同一大会上，包括运行win10的
+              Microsoft Edge也被破解，而且来自中国而且是目前全球越狱界的领军团队盘古也成功的通过Safari的漏洞获得了macOS Sierra的root权限.</p>
+              <br/>
+              目前暂时没有团队找到运行ios 10的iPhone 7 Plus的漏洞 。
+              <br/>
+              <p>大会上所有发现的漏洞都是基于厂家最新的系统版本，且漏洞都将告知给相关厂家以免漏洞被有心人利用。
+              诺基亚公司曾于5月宣布会回归平板电脑市场，现在又宣布会在2017年与合作伙伴 HMD Global 公司携手重回智能手机市场。
 
-              <textarea class="mdl-textfield__input" type="text" rows= "5" cols="60" id="comment" ></textarea>
-              <label class="mdl-textfield__label" for="comment">说些什么吧....</label>
+              诺基亚官网上出现了关于新手机的部分——可以看到该网站由 HMD Global Oy 运营，该公司拥有诺基亚品牌的独家授权。
+
+              HMD Global 也是家芬兰公司，但设备是否由芬兰本地生产则不得而知。今年五月，HMD Global 表示诺基亚平板电脑将会在一家越南工厂生产，现在还不清楚新手机是否也会这样，但可能性很大。无论如何，HMD Global 已经获得了诺基亚品牌接下来十年间的独家使用权。
+
+              诺基亚官网鼓励大家注册以获得更多有关新手机的消息，在2017年发布之前，我们只需拭目以待，看看诺基亚手机运行 Android 系统的梦想是否会成真
+              </p>
+              <p><i class="material-icons v-middle nex-icon-style">loyalty</i> <a class="nex-tag nex-default-color" href="##">业界</a><a class="nex-tag nex-default-color" href="##">爱谷歌</a></p>
+              <div>
+                <a href="" class="margin-right-25 nex-content-icon-con"><i class="material-icons v-middle nex-content-icon nex-content-icon1">textsms</i> 11</a>
+                  <a href="" class="nex-content-icon-con"><i class="material-icons v-middle nex-content-icon shine-color">star</i> 12</a>
+              </div>
+              <div class="nex-drawer-separator"></div>
+              <div class="nex-content-action">
+                 <span>相关文章</span>
+                <a href="">Dan The Man : 水果忍者同厂出品，让你重温玩超级玛丽的快感 #iOS #Android</a>
+              </div>
+            </div>
           </div>
-          <div class=" mdl-cell mdl-cell--12-col">
-            <button class="mdl-button mdl-js-button mdl-button--primary float-right">评论
-            </button>
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-grid nex-content-comment mdl-shadow--2dp">
+            <div class="nex-comment-title mdl-cell mdl-cell--12-col">文章评论</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+
+                <textarea class="mdl-textfield__input" type="text" rows= "5" cols="60" id="comment" ></textarea>
+                <label class="mdl-textfield__label" for="comment">说些什么吧....</label>
+            </div>
+            <div class=" mdl-cell mdl-cell--12-col">
+              <button class="mdl-button mdl-js-button mdl-button--primary float-right">评论
+              </button>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <ul class="nex-card-comment mdl-list">
+                <li class="mdl-list__item mdl-list__item--three-line">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-avatar">person</i>
+                    <span class="font-default">Ever</span>
+                    <span class="nex-card-comment-time">1分钟前</span>
+                    <span class="mdl-list__item-text-body">
+                      你咋不上天呢
+                    </span>
+                  </span>
+                </li>
+                <li class="mdl-list__item mdl-list__item--three-line">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons  mdl-list__item-avatar">person</i>
+                    <span class="font-default">杨鹏义</span>
+                    <span class="nex-card-comment-time">5分钟前</span>
+                    <span class="mdl-list__item-text-body">
+                      我正在上天
+                    </span>
+                  </span>
+                </li>
+                <li class="mdl-list__item mdl-list__item--three-line">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons  mdl-list__item-avatar">person</i>
+                    <span class="font-default">杜大平</span> 
+                    <span class="nex-card-comment-time">9分钟前</span>
+                    <span class="mdl-list__item-text-body">
+                      是这样的呀阿大声道飒飒大大哥大还是够得按时给大哥是的哈感受到哈股东会ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                    </span>
+                  </span>
+                </li>
+                <li class="mdl-list__item mdl-list__item--three-line">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons  mdl-list__item-avatar">person</i>
+                    <span class="font-default">郑心享</span>
+                    <span class="nex-card-comment-time">10分钟前</span>
+                    <span class="mdl-list__item-text-body">
+                      我也在天上呀
+                    </span>
+                  </span>
+                </li>
+                <li class="mdl-list__item mdl-list__item--three-line">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons  mdl-list__item-avatar">person</i>
+                    <span class="font-default">杜大平小号</span> 
+                    <span class="nex-card-comment-time">11分钟前</span>
+                    <span class="mdl-list__item-text-body">
+                      看到我的乱码没，没没没额懱没嗯没么么么么么么Phasellus ultrices nulla quis nibh. Quisque a lectus.
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+  <!--           <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">
+                <span class="nex-comment-title">文章评论</span>
+                <span class="float-right nex-content-small-title">
+                  <a href="##">最新</a>
+                  <a href="##">最早</a>
+                  <a href="##">最热</a>
+                </span>
+              </h2>
+            </div> -->
           </div>
-<!--           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">
-              <span class="nex-comment-title">文章评论</span>
-              <span class="float-right nex-content-small-title">
-                <a href="##">最新</a>
-                <a href="##">最早</a>
-                <a href="##">最热</a>
-              </span>
-            </h2>
-          </div> -->
+          <nav class="mdl-cell mdl-cell--12-col nex-mobile-2">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect nex-content-btnbar"><i class="material-icons">arrow_back</i> 上一篇</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect float-right nex-content-btnbar">下一篇 <i class="material-icons">arrow_forward</i></button>
+            </nav>
         </div>
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--hidden-phone"></div>
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone nex-hp-1 mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card nex-content-writer mdl-grid mdl-shadow--2dp nex-hp-2">
+            <div class="mdl-cell mdl-cell--3-col">
+              <a href=""><img src="../images/writer.jpg" class="nex-content-writer-img nex-user-portrait" /></a>
+              <strong>120</strong>
+              <span class="nex-font">文章总数</span>
+            </div>
+            <div class="mdl-cell mdl-cell--9-col">
+              <a href="" class="nex-content-writer-name">亲爱的阿基米德</a>
+              <span class="nex-content-writer-identity">编辑</span>
+              <a href="" class="nex-content-writer-body">最近:谷歌助理可以在社交媒体上分享网站的文章</a>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp mdl-grid nex-content-infobar nex-hp-2">
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons v-middle nex-content-icon">share</i> 分享</button>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect float-left"><i class="material-icons nex-content-icon">comment</i> 评论</button>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col" style="z-index:3">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="two_code">二维码</button>
+              <div class="mdl-tooltip" for="two_code"><img src="../images/2code.png" alt="二维码" class="two-code" /></div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone nex-content-tabs mdl-card mdl-shadow--2dp nex-hp-2">
+              <div class="mdl-tabs mdl-js-tabs">
+                <div class="mdl-tabs__tab-bar">
+                   <a href="#tab1-panel" class="mdl-tabs__tab is-active">最热</a>
+                   <a href="#tab2-panel" class="mdl-tabs__tab">最新</a>
+                   <a href="#tab3-panel" class="mdl-tabs__tab">评论</a>
+                </div>
+                <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg" class=""></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">华硕取消ZenFone 3 Deluxe</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">华硕取消ZenFone 3 Deluxe</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="tab2-panel">
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg" class="nex-list-img"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                  <div class="nex-small-list">
+                    <div class="nex-small-list-img nex-ovf">
+                      <a href=""><img src="../images/post-img.jpg" class="nex-list-img"></a>
+                    </div>
+                    <div class="nex-small-list-title">
+                      <span class="nex-list-header font-default nex-small-list-item"><a href="##">我要发点文章</a></span>
+                      <span class="display-block nex-list-lastline"><a href=""><img src="../images/user_por.png" class="small-page-maker" /><span class="nex-list-writer">沈欢</span></a><i class="material-icons margin-left">textsms</i> (11) </span>
+                    </div>                   
+                  </div>
+                </div>
+                <div class="mdl-tabs__panel" id="tab3-panel">
+                  
+                </div>
+              </div>
+            </div>
+        </div>
         <!-- <div class="mdl-cell mdl-cell--9-col mdl-cell--hidden-phone">
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">上一篇</button>
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast float-right">下一篇</button>
         </div> -->
-        <div class="mdl-cell mdl-cell--8-col mdl-cell--hidden-phone mdl-grid">
+<!--         <div class="mdl-cell mdl-cell--9-col mdl-cell--hidden-phone mdl-grid">
           <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-phone photo-surface" style="background-image: url(../images/wear.png);">
             <a href="">
               <h6 class="font-default">星巴克卖起了高科技保温杯，一个就要 1000 元</h6>
@@ -271,7 +333,12 @@
               <p class="text-right">下一篇 <i class="material-icons v-middle">chevron_right</i></p>
             </a>
           </div>
-        </div>
+        </div> -->
+      </div>
+      <div class="nex-footer-bar">
+        <span><a href="" class="nex-footer-bar-color"><i class="material-icons v-middle">share</i> 分享</a></span>
+        <span><a href="" class="nex-footer-bar-color"><i class="material-icons v-middle">comment</i> 评论</a></span>
+        <span><a href="" class="nex-footer-bar-color"><i class="material-icons v-middle">thumb_up</i> 点赞</a></span>
       </div>
       <footer class="nex-footer mdl-mega-footer">
         <div class="mdl-mega-footer--top-section">
@@ -359,40 +426,50 @@
   <script src="../js/material.min.js"></script>
   <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          var MobileUA = (function() {  
+            var ua = navigator.userAgent.toLowerCase();
+            var mua = {  
+                IOS: /ipod|iphone|ipad/.test(ua), //iOS  
+                IPHONE: /iphone/.test(ua), //iPhone  
+                IPAD: /ipad/.test(ua), //iPad  
+                ANDROID: /android/.test(ua), //Android Device  
+                WINDOWS: /windows/.test(ua), //Windows Device  
+                TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device  
+                MOBILE: /mobile/.test(ua), //Mobile Device (iPad)  
+                ANDROID_TABLET: false, //Android Tablet  
+                WINDOWS_TABLET: false, //Windows Tablet  
+                TABLET: false, //Tablet (iPad, Android, Windows)  
+                SMART_PHONE: false //Smart Phone (iPhone, Android)  
+            };
+            mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;  
+            mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);  
+            mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;  
+            mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;
+            return mua;  
+        }());
+        //SmartPhone   
+        if (MobileUA.SMART_PHONE) {  
+            // 移动端链接地址  
+            $(".mdl-layout__header-row").addClass("mdl-layout--small-screen-only");
+            $(".mdl-js-layout").removeClass("mdl-layout--fixed-header");
+            // $(".nex-content-1").scroll(function() {
+            //     var scrollHeight = $(this).scrollTop();
+            //     if (scrollHeight > 100) {
+            //       $(".mdl-layout__header-row").removeClass("mdl-layout--small-screen-only");
+            //       $(".mdl-js-layout").addClass("mdl-layout--fixed-header");
+            //       $(".mdl-layout__drawer-button").addClass("nex-zone-drawer-button");
+            //     }
+            //     else {
+            //       $(".mdl-layout__header-row").addClass("mdl-layout--small-screen-only");
+            //       $(".mdl-js-layout").removeClass("mdl-layout--fixed-header");
+            //       $(".mdl-layout__drawer-button").removeClass("nex-zone-drawer-button");
+            //     }
+            // });
+          }
+        })
+
+      </script>
 </body>
 </html>
-<!--           <div class="mdl-card__supporting-text">
-            <div class="mdl-grid">
-                <span class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"><img src="../images/user_por.png"></span>
-                <span class="mdl-cell mdl-cell--11-col nex-cell-phone">
-                  <span class="nex-list-title">aadasddhj</span>
-                  <span>
-                    Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
-                    Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
-                    Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-                  </span>
-                </span>
-                <span class="mdl-cell mdl-cell--1-col"></span>
-                <span class="mdl-cell mdl-cell--11-col nex-list-info">
-                  <span></span>
-                  <a href=""><i class="material-icons v-middle">reply</i> 回复</a>
-                  <a href=""><i class="material-icons v-middle">thumb_up</i> 赞</a>
-                  <a href=""><i class="material-icons v-middle">redo</i> 转发</a>
-                </span>
-              <div class="mdl-cell mdl-cell--1-col">
-              </div>
-              <div class="mdl-cell mdl-cell--11-col">
-                   <strong class="font-default nex-list-head font-default">最新评论</strong>
-              </div>
-              <div class="mdl-cell mdl-cell--1-col"></div>
-              <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--11-col">
-
-                <textarea class="mdl-textfield__input" type="text" rows= "5" cols="60" id="sample5" ></textarea>
-                <label class="mdl-textfield__label" for="sample5">说些什么吧....</label>
-              </div>
-              <div class=" mdl-cell mdl-cell--12-col">
-                <button class="mdl-button mdl-js-button mdl-button--primary float-right">评论
-                </button>
-              </div>
-            </div>
-          </div> -->

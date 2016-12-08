@@ -55,7 +55,7 @@ body{
     }
     .atc-cmt-main a {
       color: #666;
-      font-size: 10px;
+      font-size: 12px;
       text-decoration: none;
       font-weight: 700;
     }
@@ -64,12 +64,12 @@ body{
     }
     .atc-cmt-main span {
       color: #999;
-      font-size: 10px;
+      font-size: 12px;
     }
     .atc-cmt-header {
       position: relative;
       line-height: 25px;
-      font-size: 10px;
+      font-size: 12px;
     }
     .atc-cmt-icon-prs {
       float:right;

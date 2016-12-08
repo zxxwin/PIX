@@ -42,9 +42,11 @@ a {
     border-bottom: 1px solid #eee;
   }
    .sub-category {
-    padding: 5px;
-    padding-left: 10px;
-    background: #fafafa;
+    padding: 5px 10px;
+    /*line-height: 20px;*/
+    color: #fff;
+    border-radius: 18px;
+    background: #65a7ca;
    }
   .main-category  li, .sub-category li {
     display: inline-block;
@@ -265,66 +267,7 @@ a {
   }
 
 
-.side-pannel {
-  margin-top: 41px;
-}
-.userInfo {
-  /*border-radius: 5px;*/
-  padding: 10px;
-  background: #ffffff;
-}
-  .userInfo span {
-    color: #666666;
-    vertical-align: middle;
-  }
-  .user-name {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .user-name a {
-    color: #333333;
-    text-decoration: underline;
-  }
-  .icon-box {
-    /*text-align: center;*/
-    margin: 5px 0;
-  }
-  .icon-box .mdl-badge {
-    margin: 0;
-  }
-  .icon-box .mdl-badge:after {
-    top: -10px;
-    left: -15px;
-    width: 15px;
-    height: 15px;
-  }
-    .btn-write {
-      width: 100%;
-      margin-top: 5px;
-      font-family: "Microsoft YaHei";
-      font-size: 16px;
-      color: #ffffff;
-      background: #5cb85c;
-      /*border-radius: 5px;*/
-    }
-    .btn-write:hover{
-      background: #449d44;
-    }
-    .btn-write i{
-      font-size: 18px;
-      line-height: 31px;
-    }
-    .btn-noti {
-      color: #FFEB3B;
-    }
-    .btn-grade {
-      color: #FFB74D;
-    }
-    .btn-settings {
-      color: #757575;
-    }
 .ad {
-  margin-top: 16px;
   padding: 10px;
   /*border-radius: 5px;*/
   background: #ffffff;

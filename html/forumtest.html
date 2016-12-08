@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/forum.css">
   <link rel="stylesheet" href="../css/forum-test.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/article.css">
   <style>
 
     .article-subnav {
@@ -78,38 +80,26 @@
         <span class="nex-title mdl-layout-title">Pixel中文网</span>
         <!-- Add spacer, to align navigation to the right in desktop -->
         <div class="nex-header-spacer mdl-layout-spacer"></div>
-        <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-          <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
-            <i class="material-icons">search</i>
-          </label>
+            <div class="nex-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+              <label class="mdl-button mdl-js-button mdl-button--icon nex-navigation-search" for="search-field">
+                <i class="material-icons">search</i>
+              </label>
 
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" id="search-field">
-          </div>
-        </div>
-        <!-- Navigation -->
-        <div class="nex-navigation-container">
-          <nav class="nex-navigation mdl-navigation">
-            <a class="mdl-navigation__link"  href="index.html">首页</a>
-            <a class="mdl-navigation__link" href="forum.html">论坛</a>
-            <a class="mdl-navigation__link" href="##">淘宝</a>
-          </nav>
-        </div>
-        <span class="nex-mobile-title mdl-layout-title">
-          Nexus中文网
-        </span>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect  nex-navigation-icon " id="login">
-          <i class="material-icons">account_circle</i>
-        </button>
-        <div class="mdl-tooltip" data-mdl-for="login">
-          登录
-        </div>
-        <button class="nex-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect nex-navigation-icon" id="register">
-          <i class="material-icons">assignment</i>
-        </button>
-        <div class="mdl-tooltip" data-mdl-for="register">
-          注册
-        </div>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" id="search-field">
+              </div>
+            </div>
+            <!-- Navigation -->
+            <div class="nex-navigation-container">
+              <nav class="nex-navigation mdl-navigation">
+                <a class="mdl-navigation__link"  href="index.html">首页</a>
+                <a class="mdl-navigation__link" href="forum.html">论坛</a>
+                <a class="mdl-navigation__link" href="##">淘宝</a>
+              </nav>
+            </div>
+            <button style="background:#00bcd4;" class="nex-more-button mdl-button mdl-js-button mdl-js-ripple-effect  nex-navigation-icon " id="login">
+              登录
+            </button>
       </div>
       <div class="article-subnav main-full mdl-layout--small-screen-only">  
         <a href="forum.html" class="forum-header-icon mdl-button mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
@@ -122,16 +112,12 @@
           <i style="margin:auto; color:#fff;" class="material-icons">more_vert</i>
         </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li style="float:none;font-size:14px;color:#000;" class="atc-cmt-icon-rpl mdl-menu__item">
-              <i class="material-icons">reply</i>
-              回复
-            </li>
             <li class="mdl-menu__item">
-              <i class="material-icons">star_border</i>
+              <i class="more_vert-icon material-icons">star_border</i>
               收藏
             </li>
             <li class="mdl-menu__item">
-              <i class="material-icons">share</i>
+              <i class="more_vert-icon material-icons">share</i>
               分享
             </li>
           </ul>
@@ -194,6 +180,31 @@
           <div class="list mdl-shadow--2dp">
            <!--  <div class="list-pin mdl-shadow--2dp">
             </div> --> 
+
+            <div class="list-head">
+              <div class="block-pos">
+                <a href="#">论坛</a>
+                <i class="material-icons">keyboard_arrow_right</i>
+                <a href="#">Pixel 专区</a>
+                <i class="material-icons">keyboard_arrow_right</i>
+                <a href="#">Pixel 手机</a>
+              </div>
+              <div class="list-sort">
+                <button id="my-menu-lower-left"
+                        class="mdl-button mdl-js-button">
+                  最新主题
+                  <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="my-menu-lower-left">
+                  <li class="mdl-menu__item">最新主题</li>
+                  <li class="mdl-menu__item">热门主题</li>
+                  <li class="mdl-menu__item">最新回复</li>
+                </ul>
+              </div>
+              <div class="float-clr"></div>
+            </div>
             <div class="list-item">
               <table>
                 <tr>
@@ -560,36 +571,9 @@
           </div>
         </div>
         <div style="margin-top: 8px;" class="side-pannel mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-          <div class="userInfo mdl-shadow--2dp">
-            <div class="user-portrait">
-              <a href="#"><img src="../images/user_por.png" width="48px" height="48px" alt=""></a>
-            </div>
-            <div class="user-name">
-              <a href="#">newX</a>
-              <span>，晚上好！</span>
-            </div>
-            <div class="icon-box">
-              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
-                <i class="btn-noti material-icons">notifications</i>
-                <span class="mdl-badge" data-badge="4">消息</span>
-              </button>
-              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
-                <i class="btn-grade material-icons">grade</i>
-                <span>收藏</span>
-              </button>
-              <button class="padding-sm mdl-button mdl-js-button mdl-js-ripple-effect">
-                <i class="btn-settings material-icons">settings</i>
-                <span>设置</span>
-              </button>
-              <button class="btn-write mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
-                <i class="btn-create material-icons">create</i>
-                发表主题
-              </button>
-            </div>
-          </div>
 
           <div class="ad mdl-shadow--2dp">
-            广告
+            推广
           </div>
         </div>        
       </div>
